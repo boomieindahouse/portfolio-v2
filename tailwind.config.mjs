@@ -12,8 +12,8 @@ export default {
         foreground: "var(--foreground)",
         primary: "#141414",
       },
-      textColor: {
-        'gradient-instagram': 'linear-gradient(45deg, #fd1d1d, #fcb045, #ffdc80)'
+      backgroundImage: {
+        'text-gradient': 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)',
       },
     },
   },

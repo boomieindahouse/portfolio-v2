@@ -43,16 +43,16 @@ const HeroSection = () => {
                             <p className="text-white">Korat, Thailand</p>
                         </div>
                         <div className="flex flex-col items-start md:items-start space-y-2">
-                            <Link href="https://linkedin.com/in/prawitsanat" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-500">
+                            <Link href="https://linkedin.com/in/prawitsanat" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
                                 LinkedIn
                             </Link>
-                            <Link href="https://github.com/boomieindahouse" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-500">
+                            <Link href="https://github.com/boomieindahouse" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-600">
                                 Github
                             </Link>
-                            <Link href="mailto:prawitsanat@hotmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-500">
+                            <Link href="mailto:prawitsanat@hotmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
                                 Email
                             </Link>
-                            <Link href="https://www.instagram.com/boomieindahouse/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-500">
+                            <Link href="https://www.instagram.com/boomieindahouse/" target="_blank" rel="noopener noreferrer" className="text-white hover:bg-text-gradient hover:text-transparent bg-clip-text">
                                 Instagram
                             </Link>
                         </div>

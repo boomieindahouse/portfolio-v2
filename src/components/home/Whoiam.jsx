@@ -61,7 +61,7 @@ const AboutSection = () => {
                                     <FaGithub className="text-3xl text-white" /> */}
                                 </a>
                                 <a href="https://www.instagram.com/boomieindahouse/" target="_blank" rel="noopener noreferrer">
-                                    <Icon icon="akar-icons:instagram-fill" className="text-3xl text-white hover:text-orange-400" />
+                                    <Icon icon="akar-icons:instagram-fill" className="text-3xl text-white hover:bg-text-gradient hover:rounded-lg" />
                                     {/* หรือ ถ้าใช้ FontAwesome
                                     <FaInstagram className="text-3xl text-white" /> */}
                                 </a>
