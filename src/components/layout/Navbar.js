@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-primary">
+    <nav className="fixed w-full z-50 bg-transparent">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center h-16 px-4 lg:px-8">
+        <div className="flex justify-between items-center h-16 px-4 lg:px-0">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-white text-xl font-bold">

@@ -5,7 +5,10 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
     return (
-        <div className="h-[800px] bg-primary flex items-center px-4 sm:px-6 lg:px-8">
+        <div className="h-[800px] bg-primary flex items-center px-4 sm:px-6 lg:px-8" style={{
+            backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)',
+            backgroundSize: '30px 30px', // ตั้งขนาดช่องของกริด
+        }}>
             <div className="container mx-auto">
                 <h1 className="text-4xl md:text-6xl lg:text-[80pt] font-semibold text-white leading-tight text-left md:text-left">
                     I&apos;m a Passionate Creative
