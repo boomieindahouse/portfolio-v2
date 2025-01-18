@@ -1,15 +1,35 @@
 // src/components/layout/Navbar.js
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null); // ใช้ ref สำหรับการจับเมนู
+  const buttonRef = useRef(null); // ใช้ ref สำหรับปุ่ม Hamburger
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // ตรวจจับการคลิกข้างนอกเมนูและปิดเมนู
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current && !menuRef.current.contains(event.target) && 
+        buttonRef.current && !buttonRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    // ฟังค์ชั่นในการฟังคลิกที่ข้างนอก
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="fixed w-full z-50 bg-transparent">
@@ -47,11 +67,14 @@ const Navbar = () => {
           {/* Hamburger Button for Mobile */}
           <button
             onClick={toggleMenu}
-            className="text-white p-2 md:hidden"
+            className="text-white p-2 md:hidden relative z-50"
             aria-label="Menu"
+            ref={buttonRef} // ผูกกับปุ่ม Hamburger
           >
             <svg
-              className="h-6 w-6"
+              className={`h-6 w-6 transform transition-transform duration-300 ${
+                isOpen ? 'rotate-45' : 'rotate-0'
+              }`}
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -71,28 +94,29 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
+        ref={menuRef} // ผูกกับเมนู
         className={`${
-          isOpen ? 'block' : 'hidden'
-        } fixed inset-0 bg-black bg-opacity-95 z-40 md:hidden`}
+          isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+        } fixed inset-x-0 top-[55px] bg-primary z-40 md:hidden transition-all duration-500 ease-in-out`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        <div className="flex flex-col items-end justify-center space-y-5 py-8 px-8">
           <Link
             href="/"
-            className="text-white text-2xl hover:text-orange-500 transition-colors"
+            className="text-white text-1xl hover:text-orange-500 transition-colors border-b border-gray-400"
             onClick={toggleMenu}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-white text-2xl hover:text-orange-500 transition-colors"
+            className="text-white text-1xl hover:text-orange-500 transition-colors border-b border-gray-400"
             onClick={toggleMenu}
           >
             About
           </Link>
           <Link
             href="/works"
-            className="text-white text-2xl hover:text-orange-500 transition-colors"
+            className="text-white text-1xl hover:text-orange-500 transition-colors border-b border-gray-400"
             onClick={toggleMenu}
           >
             Works
