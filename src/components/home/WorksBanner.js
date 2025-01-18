@@ -16,7 +16,7 @@ const FullscreenLoopSection = () => {
     }, [totalPictures]);
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[900px] overflow-hidden">
             {/* Current Section */}
             <section className="absolute inset-0 w-full h-full">
                 <img 
