@@ -1,4 +1,7 @@
+'use client'
+
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import { Icon } from '@iconify/react'; // ถ้าใช้ Iconify
 // import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa'; // ถ้าใช้ FontAwesome
 
@@ -13,7 +16,17 @@ const AboutSection = () => {
                 <div className="flex flex-col lg:flex-row justify-between mt-5">
                     <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
                         <div>
-                            <h3 className="text-xl lg:text-3xl font-normal mb-6">PAWITSANAT PRAPANANYOSANAN</h3>
+                            <span className="text-white text-xl lg:text-3xl font-normal mb-6">
+                                <Typewriter
+                                    words={['Pawitsanat Prapananyosanan ', 'Boomies']}
+                                    loop={true}
+                                    cursor
+                                    cursorStyle="|"
+                                    typeSpeed={80}
+                                    deleteSpeed={50}
+                                    delaySpeed={1500}
+                                />
+                            </span>
                         </div>
                         <div className='mb-5 lg:mb-10'>
                             <p className="text-lg mb-6">
