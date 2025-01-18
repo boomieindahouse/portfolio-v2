@@ -19,16 +19,16 @@ const PortfolioSection = () => {
     ];
 
     return (
-        <section className="bg-primary text-white py-12 px-6">
+        <section className="bg-primary text-white py-4 px-6">
             <div className="container mx-auto">
                 <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-20'>
                     <div>
-                        <h2 className="text-4xl lg:text-[60pt] font-medium">
+                        <h2 className="text-3xl lg:text-[60pt] font-medium">
                             Check the Works
                         </h2>
                     </div>
                     <div>
-                        <a href="/works" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-lg lg:text-2xl'>See more</a>
+                        <a href="/works" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-sm lg:text-2xl'>See more</a>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-5 lg:mb-16">

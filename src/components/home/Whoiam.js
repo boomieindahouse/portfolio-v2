@@ -11,7 +11,7 @@ const AboutSection = () => {
             <div className="container mx-auto">
                 <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-20'>
                     <div>
-                        <h2 className="text-4xl lg:text-[60pt] font-medium">
+                        <h2 className="text-3xl lg:text-[60pt] font-medium">
                             Know Who I Am
                         </h2>
                     </div>
