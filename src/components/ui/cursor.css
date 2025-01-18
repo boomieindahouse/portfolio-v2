@@ -24,7 +24,7 @@
 }
 
 /* ยกเลิก cursor บน mobile/tablet */
-@media (max-width: 1023px) {
+@media (max-width: 1180px) {
   * {
     cursor: default; /* ใช้ cursor ปกติ */
   }
