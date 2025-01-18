@@ -72,8 +72,8 @@ const Navbar = () => {
             ref={buttonRef} // ผูกกับปุ่ม Hamburger
           >
             <svg
-              className={`h-6 w-6 transform transition-transform duration-300 ${
-                isOpen ? 'rotate-45' : 'rotate-0'
+              className={`h-6 w-6 transform transition-transform duration-700 ${
+                isOpen ? 'rotate-180' : 'rotate-0'
               }`}
               fill="none"
               strokeLinecap="round"
@@ -83,7 +83,7 @@ const Navbar = () => {
               stroke="currentColor"
             >
               {isOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
+                <path d="M4 12h16" />
               ) : (
                 <path d="M4 6h16M4 12h16M4 18h16" />
               )}
