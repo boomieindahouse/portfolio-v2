@@ -17,8 +17,25 @@ const FullscreenLoopSection = () => {
 
     return (
         <div className="relative w-full h-[900px] overflow-hidden">
-            {/* Current Section */}
-            <section className="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover"
+            {/* Current Section for Mobile */}
+            <section className="absolute inset-0 w-full h-full block md:hidden">
+                <img 
+                    src={getPicture(currentSection)}
+                    alt={`Section ${currentSection}`}
+                    className="w-full h-full object-cover"
+                />
+                
+                {/* Section Content Container */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="container mx-auto px-4">
+                        {/* Add your section content here */}
+                        {/* <h1 className="text-white text-4xl">Parallax Scrolling Effect</h1> */}
+                    </div>
+                </div>
+            </section>
+
+            {/* Current Section for Desktop */}
+            <section className="absolute inset-0 w-full h-full hidden md:block bg-fixed bg-center bg-cover"
                 style={{ backgroundImage: `url(${getPicture(currentSection)})` }}>
                 
                 {/* Section Content Container */}
@@ -30,8 +47,8 @@ const FullscreenLoopSection = () => {
                 </div>
             </section>
 
-            {/* Next Section (Pre-loaded) */}
-            <section className="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover"
+            {/* Next Section (Pre-loaded) for Desktop */}
+            <section className="absolute inset-0 w-full h-full hidden md:block bg-fixed bg-center bg-cover"
                 style={{ backgroundImage: `url(${getPicture(currentSection === totalPictures ? 1 : currentSection + 1)})` }}>
             </section>
         </div>
