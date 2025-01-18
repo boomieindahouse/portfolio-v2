@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
     return (
-        <div className="min-h-screen bg-primary flex items-center px-4 sm:px-6 lg:px-8">
+        <div className="h-[800px] bg-primary flex items-center px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
                 <h1 className="text-4xl md:text-6xl lg:text-[80pt] font-semibold text-white leading-tight text-left md:text-left">
                     I&apos;m a Passionate Creative
@@ -27,7 +27,7 @@ const HeroSection = () => {
                     <br />
                     curiosity.
                 </h1>
-                <div className="flex flex-row md:flex-row justify-between mt-28 lg:mt-8">
+                <div className="flex flex-row md:flex-row justify-between mt-24 lg:mt-8">
                     <div className="space-y-2 mb-6 md:mb-0">
                         <p className="text-white text-left md:text-left">Front End Developer</p>
                         <p className="text-white text-left md:text-left">UX/UI Designer</p>

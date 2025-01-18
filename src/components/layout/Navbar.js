@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 bg-primary">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center h-16 md:h-32 px-4 lg:px-8">
+        <div className="flex justify-between items-center h-16 px-4 lg:px-8">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-white text-xl font-bold">
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden flex-col md:flex">
+          <div className="hidden flex space-x-4 md:flex">
             <Link
               href="/"
               className="text-white text-lg hover:text-orange-500 transition-colors"
