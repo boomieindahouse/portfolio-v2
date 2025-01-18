@@ -5,13 +5,13 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
     return (
-        <div className="h-[800px] bg-primary flex items-center px-4 sm:px-6 lg:px-8" style={{
+        <div className="h-[800px] bg-primary flex items-center px-4 sm:px-6 xl:px-8" style={{
             backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px)',
             backgroundSize: '30px 30px', // ตั้งขนาดช่องของกริด
         }}>
             <div className="container mx-auto">
-                <div className='h-[450px] lg:h-[550px]'>
-                    <h1 className="text-[38pt] md:text-7xl lg:text-[80pt] font-semibold text-white leading-[55px] lg:leading-tight text-left md:text-left mt-0 lg:mt-10">
+                <div className='h-[450px] xl:h-[550px]'>
+                    <h1 className="text-[38pt] md:text-7xl xl:text-[80pt] font-semibold text-white leading-[55px] xl:leading-tight text-left md:text-left mt-0 xl:mt-10">
                         I&apos;m a Passionate Creative
                         <br />
                         <span className="text-orange-500">
@@ -32,7 +32,7 @@ const HeroSection = () => {
                         curiosity.
                     </h1>
                 </div>
-                <div className="flex flex-row md:flex-row justify-between mt-0 lg:mt-8">
+                <div className="flex flex-row md:flex-row justify-between mt-0 xl:mt-8">
                     <div className="space-y-2 mb-6 md:mb-0">
                         <p className="text-white text-left md:text-left">Front End Developer</p>
                         <p className="text-white text-left md:text-left">UX/UI Designer</p>

@@ -7,22 +7,22 @@ import { Icon } from '@iconify/react'; // ถ้าใช้ Iconify
 
 const AboutSection = () => {
     return (
-        <section className="px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <section className="px-4 sm:px-6 xl:px-8 bg-primary text-white">
             <div className="container mx-auto">
-                <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-20'>
+                <div className='flex items-center justify-between border-b border-gray-400 py-5 xl:py-20'>
                     <div>
-                        <h2 className="text-3xl lg:text-[60pt] font-medium">
+                        <h2 className="text-3xl xl:text-[60pt] font-medium">
                             Know Who I Am
                         </h2>
                     </div>
                     <div>
-                        <a href="/about" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-lg lg:text-2xl'>See more</a>
+                        <a href="/about" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-lg xl:text-2xl'>See more</a>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row justify-between mt-5 lg:mt-16">
-                    <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
+                <div className="flex flex-col lg:flex-row xl:flex-row justify-between mt-5 xl:mt-16">
+                    <div className="flex flex-col justify-between max-w-lg xl:max-w-xl">
                         <div className='h-[80px]'>
-                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-[40pt] font-medium mb-6 leading-[45px] lg:leading-[55px]">
+                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl xl:text-[40pt] font-medium mb-6 leading-[45px] xl:leading-[55px]">
                                 <Typewriter
                                     words={['PAWITSANAT PRAPANANYOSANAN', 'Boomieindahouse']}
                                     loop={true}
@@ -34,7 +34,7 @@ const AboutSection = () => {
                                 />
                             </span>
                         </div>
-                        <div className='mb-5 lg:mb-10'>
+                        <div className='mb-5 xl:mb-10'>
                             <p className="text-lg mb-6 mt-4">
                                 I&apos;m a creative and passionate Front-end Developer, UX/UI Designer, and Graphic Designer. I specialize in crafting intuitive and visually stunning digital experiences.
                             </p>
@@ -45,7 +45,7 @@ const AboutSection = () => {
                     </div>
 
                     {/* รูปโปรไฟล์ */}
-                    <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 lg:mb-10 relative group overflow-hidden">
+                    <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 xl:mb-10 relative group overflow-hidden">
                         <img
                             src="https://i.postimg.cc/7Y5BmHm5/profilepic.png"
                             alt="Profile"
