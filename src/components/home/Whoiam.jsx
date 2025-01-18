@@ -16,7 +16,7 @@ const AboutSection = () => {
                 <div className="flex flex-col lg:flex-row justify-between mt-5">
                     <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
                         <div>
-                            <span className="text-white text-xl lg:text-3xl font-normal mb-6">
+                            <span className="text-orange-500 text-2xl lg:text-3xl font-normal mb-6">
                                 <Typewriter
                                     words={['Pawitsanat Prapananyosanan ', 'Boomies']}
                                     loop={true}
@@ -39,11 +39,11 @@ const AboutSection = () => {
                     </div>
 
                     {/* รูปโปรไฟล์ */}
-                    <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 lg:mb-10 relative group">
+                    <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 lg:mb-10 relative group overflow-hidden">
                         <img
                             src="http://i.postimg.cc/XNLD1yV7/profilepic.png"
                             alt="Profile"
-                            className="w-full h-full object-cover shadow-xl transition-opacity group-hover:opacity-50"
+                            className="w-full h-full object-cover shadow-xl transition-transform transform group-hover:scale-110 group-hover:opacity-50 hover:duration-500"
                         />
 
                         {/* Social Media Icons */}
