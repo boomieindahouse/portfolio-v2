@@ -18,8 +18,8 @@
   }
 
   .cursor-hover {
-    background-color: rgba(128, 128, 128, 0.8); /* เปลี่ยนสีเมื่อ hover */
-    transform: scale(1.3); /* ขยายวงกลม */
+    background-color: rgba(255, 255, 255,0.8); /* เปลี่ยนสีเมื่อ hover */
+    /* transform: scale(1.3); */
   }
 }
 

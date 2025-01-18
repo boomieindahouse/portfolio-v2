@@ -19,7 +19,7 @@ const PortfolioSection = () => {
     ];
 
     return (
-        <section className="bg-primary text-white py-4 px-6">
+        <section className="bg-primary text-white py-4 lg:py-16 px-6">
             <div className="container mx-auto">
                 <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-20'>
                     <div>
