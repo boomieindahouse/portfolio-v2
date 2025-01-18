@@ -10,26 +10,28 @@ const HeroSection = () => {
             backgroundSize: '30px 30px', // ตั้งขนาดช่องของกริด
         }}>
             <div className="container mx-auto">
-                <h1 className="text-[38pt] md:text-7xl lg:text-[80pt] font-semibold text-white leading-[55px] lg:leading-tight text-left md:text-left ">
-                    I&apos;m a Passionate Creative
-                    <br />
-                    <span className="text-orange-500">
-                        <Typewriter
-                            words={['Front-end Developer', 'UX/UI Designer', 'Graphic Designer']}
-                            loop={true}
-                            cursor
-                            cursorStyle="|"
-                            typeSpeed={80}
-                            deleteSpeed={50}
-                            delaySpeed={1500}
-                        />
-                    </span>
-                    ,
-                    <br />
-                    driven by creativity and
-                    <br />
-                    curiosity.
-                </h1>
+                <div className='h-[450px] lg:h-[550px]'>
+                    <h1 className="text-[38pt] md:text-7xl lg:text-[80pt] font-semibold text-white leading-[55px] lg:leading-tight text-left md:text-left ">
+                        I&apos;m a Passionate Creative
+                        <br />
+                        <span className="text-orange-500">
+                            <Typewriter
+                                words={['Front-end Developer', 'UX/UI Designer', 'Graphic Designer']}
+                                loop={true}
+                                cursor
+                                cursorStyle="|"
+                                typeSpeed={80}
+                                deleteSpeed={50}
+                                delaySpeed={1500}
+                            />
+                        </span>
+                        ,
+                        <br />
+                        driven by creativity and
+                        <br />
+                        curiosity.
+                    </h1>
+                </div>
                 <div className="flex flex-row md:flex-row justify-between mt-10 lg:mt-4 lg:mt-8">
                     <div className="space-y-2 mb-6 md:mb-0">
                         <p className="text-white text-left md:text-left">Front End Developer</p>

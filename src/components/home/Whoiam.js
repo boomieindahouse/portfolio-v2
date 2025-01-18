@@ -21,8 +21,8 @@ const AboutSection = () => {
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between mt-5 lg:mt-16">
                     <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
-                        <div>
-                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-[40pt] font-medium mb-6 leading-[55px]">
+                        <div className='h-[80px]'>
+                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-[40pt] font-medium mb-6 leading-[45px] lg:leading-[55px]">
                                 <Typewriter
                                     words={['PAWITSANAT PRAPANANYOSANAN', 'Boomieindahouse']}
                                     loop={true}
