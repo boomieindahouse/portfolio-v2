@@ -1,0 +1,21 @@
+/* cursor.css */
+* {
+    cursor: none; /* ซ่อน cursor ปกติ */
+  }
+
+.cursor {
+    position: fixed;
+    width: 25px; /* ขนาดวงกลม */
+    height: 25px;
+    background-color: rgba(107, 107, 107, 0.5); /* สีเทาโปร่งแสง */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    pointer-events: none; /* ป้องกันการรบกวนการคลิก */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out, background-color 0.2s ease-in-out;
+    z-index: 9999; /* ให้อยู่ด้านบนสุด */
+  }
+  
+  .cursor-hover {
+    background-color: rgba(128, 128, 128, 0.8); /* เปลี่ยนสีเมื่อ hover */
+    transform: scale(1.3); /* ขยายวงกลม */
+  }

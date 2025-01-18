@@ -9,22 +9,22 @@ const AboutSection = () => {
     return (
         <section className="px-4 sm:px-6 lg:px-8 bg-primary text-white">
             <div className="container mx-auto">
-                <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-10'>
+                <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-20'>
                     <div>
-                        <h2 className="text-3xl lg:text-[32pt] font-medium">
+                        <h2 className="text-4xl lg:text-[60pt] font-medium">
                             Know Who I Am
                         </h2>
                     </div>
                     <div>
-                        <a href="/about" className='text-gray-400 hover:underline text-sm lg:text-lg'>See more</a>
+                        <a href="/about" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-lg lg:text-2xl'>See more</a>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row justify-between mt-5">
+                <div className="flex flex-col lg:flex-row justify-between mt-5 lg:mt-16">
                     <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
                         <div>
-                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-3xl font-medium mb-6 ">
+                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-[40pt] font-medium mb-6 leading-[55px]">
                                 <Typewriter
-                                    words={['Pawitsanat Prapananyosanan ', 'Boomies']}
+                                    words={['PAWITSANAT PRAPANANYOSANAN', 'Boomieindahouse']}
                                     loop={true}
                                     cursor
                                     cursorStyle="|"
