@@ -11,7 +11,7 @@ const HeroSection = () => {
         }}>
             <div className="container mx-auto">
                 <div className='h-[450px] lg:h-[550px]'>
-                    <h1 className="text-[38pt] md:text-7xl lg:text-[80pt] font-semibold text-white leading-[55px] lg:leading-tight text-left md:text-left ">
+                    <h1 className="text-[38pt] md:text-7xl lg:text-[80pt] font-semibold text-white leading-[55px] lg:leading-tight text-left md:text-left mt-0 lg:mt-10">
                         I&apos;m a Passionate Creative
                         <br />
                         <span className="text-orange-500">
