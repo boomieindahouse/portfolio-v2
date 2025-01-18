@@ -9,14 +9,20 @@ const AboutSection = () => {
     return (
         <section className="px-4 sm:px-6 lg:px-8 bg-primary text-white">
             <div className="container mx-auto">
-                <h2 className="text-3xl lg:text-[32pt] font-medium border-b border-gray-400 py-5 lg:py-10">
-                    Know Who I Am
-                </h2>
-
+                <div className='flex items-center justify-between border-b border-gray-400 py-5 lg:py-10'>
+                    <div>
+                        <h2 className="text-3xl lg:text-[32pt] font-medium">
+                            Know Who I Am
+                        </h2>
+                    </div>
+                    <div>
+                        <a href="/about" className='text-gray-400 hover:underline text-sm lg:text-lg'>See more</a>
+                    </div>
+                </div>
                 <div className="flex flex-col lg:flex-row justify-between mt-5">
                     <div className="flex flex-col justify-between max-w-lg lg:max-w-xl">
                         <div>
-                            <span className="text-orange-500 text-2xl lg:text-3xl font-normal mb-6">
+                            <span className="bg-custom-gradient bg-clip-text text-transparent text-2xl lg:text-3xl font-medium mb-6 ">
                                 <Typewriter
                                     words={['Pawitsanat Prapananyosanan ', 'Boomies']}
                                     loop={true}
@@ -29,7 +35,7 @@ const AboutSection = () => {
                             </span>
                         </div>
                         <div className='mb-5 lg:mb-10'>
-                            <p className="text-lg mb-6">
+                            <p className="text-lg mb-6 mt-4">
                                 I&apos;m a creative and passionate Front-end Developer, UX/UI Designer, and Graphic Designer. I specialize in crafting intuitive and visually stunning digital experiences.
                             </p>
                             <p className="text-lg">

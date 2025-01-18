@@ -14,6 +14,7 @@ export default {
       },
       backgroundImage: {
         'text-gradient': 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)',
+        'custom-gradient': 'linear-gradient(to right, #19547b, #ffd89b)',
       },
     },
   },
