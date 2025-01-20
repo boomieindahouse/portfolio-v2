@@ -8,7 +8,7 @@ const usePicture = () => {
         'https://i.postimg.cc/FR1KbK8D/mock6.jpg',
         'https://i.postimg.cc/W453JZWd/mock7.jpg',
         'https://i.postimg.cc/ZndKgMTN/mock8.jpg',
-        'https://i.postimg.cc/BZXpY9Kz/mock9.jpg',
+        'https://i.postimg.cc/cLMN58nX/mock9.jpg',
         'https://i.postimg.cc/rz2FLNmP/mock10.jpg',
         'https://i.postimg.cc/pV4Z3GQL/mock11.jpg',
         'https://i.postimg.cc/9F9p2d1t/mock12.jpg'
