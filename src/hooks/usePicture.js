@@ -9,9 +9,9 @@ const usePicture = () => {
         'https://i.postimg.cc/W453JZWd/mock7.jpg',
         'https://i.postimg.cc/ZndKgMTN/mock8.jpg',
         'https://i.postimg.cc/cLMN58nX/mock9.jpg',
-        'https://i.postimg.cc/rz2FLNmP/mock10.jpg',
-        'https://i.postimg.cc/pV4Z3GQL/mock11.jpg',
-        'https://i.postimg.cc/9F9p2d1t/mock12.jpg'
+        'https://i.postimg.cc/sDpVt2QH/mock10.jpg',
+        'https://i.postimg.cc/g2mYdP3z/mock11.jpg',
+        'https://i.postimg.cc/gcLcHsYW/mock12.jpg'
     ];
     
 
