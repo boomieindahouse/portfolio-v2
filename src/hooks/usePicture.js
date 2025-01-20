@@ -11,7 +11,10 @@ const usePicture = () => {
         'https://i.postimg.cc/cLMN58nX/mock9.jpg',
         'https://i.postimg.cc/sDpVt2QH/mock10.jpg',
         'https://i.postimg.cc/g2mYdP3z/mock11.jpg',
-        'https://i.postimg.cc/gcLcHsYW/mock12.jpg'
+        'https://i.postimg.cc/gcLcHsYW/mock12.jpg',
+        'https://i.postimg.cc/tg6Dz8m6/mock13.jpg',
+        'https://i.postimg.cc/9Mjbg1vn/mock14.jpg',
+        'https://i.postimg.cc/DZdg9Lhy/mock15.jpg'
     ];
     
 
