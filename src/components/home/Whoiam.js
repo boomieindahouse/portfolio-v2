@@ -16,7 +16,7 @@ const AboutSection = () => {
                         </h2>
                     </div>
                     <div>
-                        <a href="/about" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-lg xl:text-2xl'>See more</a>
+                        <a href="/about" className='text-gray-400 hover:underline hover:text-white transition-colors duration-300 text-sm lg:text-xl xl:text-2xl'>See more</a>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row xl:flex-row justify-between mt-5 xl:mt-16">
