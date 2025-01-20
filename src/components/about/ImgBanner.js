@@ -9,6 +9,7 @@ const SplitImageSection = () => {
     const leftImages = [
         "https://i.postimg.cc/zDxyprPR/355392723-770796901451094-8949239429140119245-n.jpg",
         "https://i.postimg.cc/Y00xD7B2/355393367-200712936272602-6289766086379571234-n.jpg",
+        "https://i.postimg.cc/NjHLgrG1/360014201-306421095138778-4102471241018283081-n.jpg",
         "https://i.postimg.cc/59KgYX8X/354397081-788469556086765-3935830681538853378-n.jpg"
     ];
 

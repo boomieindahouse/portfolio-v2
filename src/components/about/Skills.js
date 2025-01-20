@@ -22,7 +22,7 @@ const SkillsSection = () => {
                 {/* Intro */}
                 <div className="mb-8">
                     <h2 className="text-3xl xl:text-[60pt] font-medium mb-10 border-b border-gray-400 py-5 xl:py-20">
-                        Let me introduce myself
+                        Skills and Expertise
                     </h2>
                     <p className="text-lg xl:text-xl mb-8 leading-relaxed">
                         As a versatile Front-end Developer, UX/UI Designer, and Graphic Designer, I have honed a diverse set of skills that enable me to create engaging and user-friendly digital experiences. My expertise spans a wide range of tools and technologies, ensuring that I can deliver high-quality solutions tailored to each unique project.

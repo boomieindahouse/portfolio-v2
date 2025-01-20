@@ -11,6 +11,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#141414",
+        second: "#111111",
       },
       backgroundImage: {
         'text-gradient': 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)',
