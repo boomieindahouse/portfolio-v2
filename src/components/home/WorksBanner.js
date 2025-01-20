@@ -26,7 +26,7 @@ const FullscreenLoopSection = () => {
                 />
                 
                 {/* Section Content Container */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="absolute inset-0 flex items-center justify-center">
                     <div className="container mx-auto px-4">
                         {/* Add your section content here */}
                         {/* <h1 className="text-white text-4xl">Parallax Scrolling Effect</h1> */}
@@ -39,7 +39,7 @@ const FullscreenLoopSection = () => {
                 style={{ backgroundImage: `url(${getPicture(currentSection)})` }}>
                 
                 {/* Section Content Container */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="absolute inset-0 flex items-center justify-center">
                     <div className="container mx-auto px-4">
                         {/* Add your section content here */}
                         {/* <h1 className="text-white text-4xl">Parallax Scrolling Effect</h1> */}
