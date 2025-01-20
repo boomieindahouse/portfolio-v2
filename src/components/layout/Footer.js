@@ -8,38 +8,33 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Left Section */}
                     <div className="flex flex-col items-start space-y-4">
-                        <h1 className="text-xl font-semibold mb-2">Contact</h1>
+                        {/* <h1 className="text-xl font-semibold mb-2">Let&apos;s work together</h1> */}
                         <div className="flex flex-col space-y-3">
-                            <Link 
-                                href="https://linkedin.com/in/prawitsanat" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-white text-sm hover:text-blue-500 transition-colors duration-300"
+                            <Link
+                                href="https://linkedin.com/in/prawitsanat"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 text-sm hover:text-blue-500 transition-colors duration-300"
                             >
                                 LinkedIn
                             </Link>
-                            <Link 
-                                href="https://github.com/boomieindahouse" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-white text-sm hover:text-purple-600 transition-colors duration-300"
+                            <Link
+                                href="https://github.com/boomieindahouse"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 text-sm hover:text-purple-600 transition-colors duration-300"
                             >
                                 Github
                             </Link>
-                            <Link 
-                                href="mailto:prawitsanat@hotmail.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-white text-sm hover:text-blue-500 transition-colors duration-300"
+                            <Link
+                                href="mailto:prawitsanat@hotmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 text-sm hover:text-blue-500 transition-colors duration-300"
                             >
                                 Email
                             </Link>
-                            <Link 
-                                href="https://www.instagram.com/boomieindahouse/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-white text-sm hover:text-pink-500 transition-colors duration-300"
-                            >
+                            <Link href="https://www.instagram.com/boomieindahouse/" target="_blank" rel="noopener noreferrer" className="text-gray-500 text-sm hover:bg-text-gradient hover:text-transparent bg-clip-text">
                                 Instagram
                             </Link>
                         </div>
