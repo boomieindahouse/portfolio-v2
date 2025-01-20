@@ -31,7 +31,7 @@ const PortfolioSection = () => {
                         <a href="/works" className='text-gray-400 hover:underline hover:text-white hover:duration-500 text-sm xl:text-2xl'>See more</a>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-5  xl:mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-5 md:mb-20 lg:mb-16 xl:mb-16">
                     {projects.map((project, index) => (
                         <div
                             key={index}
