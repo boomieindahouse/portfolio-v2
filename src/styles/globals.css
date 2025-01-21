@@ -20,3 +20,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Transition for rotate icon */
+.rotate-icon {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-icon.open {
+  transform: rotate(180deg);
+}
+
+/* Transition for dropdown */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.dropdown-content.open {
+  max-height: 500px; /* ปรับตามความสูงของเนื้อหา */
+}

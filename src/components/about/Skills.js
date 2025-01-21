@@ -1,11 +1,10 @@
-// SkillsSection.js
 'use client';
 
 import React, { useState } from 'react';
 import { programmingLanguages, frameworks, toolsAndPrograms } from '../constant';
 
 const SkillsSection = () => {
-    const [openSections, setOpenSections] = useState([]); 
+    const [openSections, setOpenSections] = useState([]);
 
     const toggleSection = (section) => {
         if (openSections.includes(section)) {
@@ -29,113 +28,72 @@ const SkillsSection = () => {
                     </p>
                 </div>
 
-                {/* Language */}
-                <div className="border-b border-gray-400 py-10">
-                    <div
-                        className="flex justify-between items-center cursor-pointer"
-                        onClick={() => toggleSection('programming')}
-                    >
-                        <h3 className="text-2xl font-regular">Programming Language</h3>
-                        <span className="text-2xl">{openSections.includes('programming') ? '-' : '+'}</span>
-                    </div>
-                    {openSections.includes('programming') && (
-                        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                            {programmingLanguages.map((language) => (
-                                <div
-                                    key={language.name}
-                                    className="relative group border border-gray-400 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300"
-                                >
-                                    {/* แสดงเฉพาะไอคอนเมื่อไม่ hover */}
-                                    <img
-                                        src={language.icon}
-                                        alt={language.name}
-                                        className="w-12 h-12 mx-auto"
-                                    />
-
-                                    {/* แสดงข้อมูลเมื่อ hover */}
-                                    <div className="absolute inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                                        <p className="mb-2 text-lg font-medium">{language.name}</p>
-                                        <div className="w-10/12 h-2 bg-gray-300 rounded">
-                                            <div
-                                                className="h-2 bg-green-500 rounded"
-                                                style={{ width: `${language.proficiency}%` }}
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-
+                {/* Sections */}
+                {[
+                    {
+                        title: 'Programming Language',
+                        key: 'programming',
+                        items: programmingLanguages,
+                        barColor: 'bg-green-500',
+                    },
+                    {
+                        title: 'Framework',
+                        key: 'framework',
+                        items: frameworks,
+                        barColor: 'bg-blue-500',
+                    },
+                    {
+                        title: 'Tools & Program',
+                        key: 'tools',
+                        items: toolsAndPrograms,
+                    },
+                ].map((section) => (
+                    <div key={section.key} className="border-b border-gray-400 py-10">
+                        {/* Header */}
+                        <div
+                            className="flex justify-between items-center cursor-pointer"
+                            onClick={() => toggleSection(section.key)}
+                        >
+                            <h3 className="text-2xl font-regular">{section.title}</h3>
+                            <span
+                                className={`text-2xl rotate-icon ${openSections.includes(section.key) ? 'open' : ''
+                                    }`}
+                            >
+                                {openSections.includes(section.key) ? '-' : '+'}
+                            </span>
                         </div>
-                    )}
-                </div>
 
-                {/* Framework */}
-                <div className="border-b border-gray-400 py-10">
-                    <div
-                        className="flex justify-between items-center cursor-pointer"
-                        onClick={() => toggleSection('framework')}
-                    >
-                        <h3 className="text-2xl font-regular">Framework</h3>
-                        <span className="text-2xl">{openSections.includes('framework') ? '-' : '+'}</span>
-                    </div>
-                    {openSections.includes('framework') && (
-                        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                            {frameworks.map((framework) => (
+                        {/* Content */}
+                        <div
+                            className={`mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 dropdown-content ${openSections.includes(section.key) ? 'open' : ''
+                                }`}
+                        >
+                            {section.items.map((item) => (
                                 <div
-                                    key={framework.name}
+                                    key={item.name}
                                     className="relative group border border-gray-400 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300"
                                 >
                                     <img
-                                        src={framework.icon}
-                                        alt={framework.name}
+                                        src={item.icon}
+                                        alt={item.name}
                                         className="w-12 h-12 mx-auto"
                                     />
                                     <div className="absolute inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                                        <p className="mb-2 text-lg font-medium">{framework.name}</p>
-                                        <div className="w-10/12 h-2 bg-gray-300 rounded">
-                                            <div
-                                                className="h-2 bg-blue-500 rounded"
-                                                style={{ width: `${framework.proficiency}%` }}
-                                            ></div>
-                                        </div>
+                                        <p className="mb-2 text-lg font-medium">{item.name}</p>
+                                        {item.proficiency && (
+                                            <div className="w-10/12 h-2 bg-gray-300 rounded">
+                                                <div
+                                                    className={`h-2 ${section.barColor} rounded`}
+                                                    style={{ width: `${item.proficiency}%` }}
+                                                ></div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
-
                         </div>
-                    )}
-                </div>
-
-                {/* Tools & Program */}
-                <div className="border-b border-gray-400 py-10">
-                    <div
-                        className="flex justify-between items-center cursor-pointer"
-                        onClick={() => toggleSection('tools')}
-                    >
-                        <h3 className="text-2xl font-regular">Tools & Program</h3>
-                        <span className="text-2xl">{openSections.includes('tools') ? '-' : '+'}</span>
                     </div>
-                    {openSections.includes('tools') && (
-                        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                            {toolsAndPrograms.map((tool) => (
-                                <div
-                                    key={tool.name}
-                                    className="relative group border border-gray-400 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300"
-                                >
-                                    <img
-                                        src={tool.icon}
-                                        alt={tool.name}
-                                        className="w-12 h-12 mx-auto"
-                                    />
-                                    <div className="absolute inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                                        <p className="mb-2 text-lg font-medium">{tool.name}</p>
-                                    </div>
-                                </div>
-                            ))}
-
-                        </div>
-                    )}
-                </div>
+                ))}
             </div>
         </section>
     );
