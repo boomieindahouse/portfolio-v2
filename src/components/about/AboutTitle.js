@@ -44,7 +44,14 @@ const HeroSection = () => {
 
                     <div className="flex flex-col md:flex-row md:items-start justify-between md:space-x-20">
                         <div className="mb-4 md:mb-0 text-left md:text-left">
-                            <p className="text-white">Korat, Thailand</p>
+                            <a
+                                href="/my-resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-2 py-1 text-black bg-white hover:bg-transparent hover:border hover:text-white rounded-md transition duration-300 ease-in-out"
+                            >
+                                My Resume
+                            </a>
                         </div>
                         <div className="flex flex-col items-start md:items-start space-y-2">
                             <Link href="https://linkedin.com/in/prawitsanat" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
