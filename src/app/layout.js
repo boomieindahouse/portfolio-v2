@@ -8,8 +8,8 @@ import Cursor from '@/components/ui/Cursor';
 const albertSans = Albert_Sans({ subsets: ['latin'] }); // ตั้งค่า Albert Sans
 
 export const metadata = {
-  title: 'Portfolio Website',
-  description: 'Front-end Developer Portfolio',
+  title: 'Boomies Portfolio',
+  description: 'Pawitsanat Portfolio',
 };
 
 export default function RootLayout({ children }) {
