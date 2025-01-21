@@ -9,8 +9,8 @@ const HobbiesSection = () => {
     ];
 
     return (
-        <section className="w-full bg-[#111111] text-white py-16 md:py-10">
-            <div className="container mx-auto px-4 md:px-6">
+        <section className="px-4 sm:px-6 xl:px-8 bg-primary text-white py-10">
+            <div className="container mx-auto">
                 {/* Heading */}
                 <h2 className="text-3xl xl:text-[60pt] font-medium mb-10 border-b border-gray-400 py-5 xl:py-20">
                     Hobbies and Interests
