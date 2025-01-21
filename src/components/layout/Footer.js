@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Left Section */}
                     <div className="flex flex-col items-start space-y-4">
-                        {/* <h1 className="text-xl font-semibold mb-2">Let&apos;s work together</h1> */}
+                        <h1 className="text-xl font-semibold">Let&apos;s Connect</h1>
                         <div className="flex flex-col space-y-3">
                             <Link
                                 href="https://linkedin.com/in/prawitsanat"
