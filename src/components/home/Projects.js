@@ -13,7 +13,7 @@ const PortfolioSection = () => {
             image: "https://i.postimg.cc/KzYMcH3V/ecom.jpg",
         },
         {
-            title: "Dental Ads Graphic",
+            title: "Graphic Ads Design",
             image: "https://i.postimg.cc/FKpS44z3/ads.jpg",
         },
     ];
