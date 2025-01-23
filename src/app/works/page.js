@@ -1,8 +1,14 @@
-// src/app/works/page.js
-export default function Works() {
-    return (
-      <div className="min-h-screen flex items-center justify-center text-white">
-        <h1 className="text-4xl">Works Page</h1>
-      </div>
-    );
-  }
+import WorksTitle from '../../components/works/WorksTitle'
+import WorksBanner from '@/components/home/WorksBanner';
+import RecentWorks from '@/components/works/RecentWorks';
+
+
+export default function Home() {
+  return (
+    <div>
+      <WorksTitle />
+      <WorksBanner />
+      <RecentWorks />
+    </div>
+  );
+}

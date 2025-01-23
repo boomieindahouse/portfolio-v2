@@ -51,7 +51,7 @@ const Footer = () => {
                     {/* Right Section */}
                     <div className="flex flex-col items-start md:items-end space-y-4">
                         <h1 className="text-xl font-bold">BOOMIENDAHOUSE</h1>
-                        <button className="bg-white text-black px-8 py-3 font-semibold rounded-full shadow-md hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                        <button className="bg-white border border-white text-black px-8 py-3 font-semibold rounded-full shadow-md hover:bg-transparent hover:text-white transition-all duration-700">
                             Get in touch
                         </button>
                     </div>

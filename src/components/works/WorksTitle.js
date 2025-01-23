@@ -22,16 +22,16 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="h-[500px] lg:h-[600px] bg-primary flex items-center px-4 sm:px-6 xl:px-8" style={{
+        <div className="h-full py-20 bg-primary flex items-center px-4 sm:px-6 xl:px-8" style={{
             backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px)',
             backgroundSize: '30px 30px',
         }}>
             <div className="container mx-auto">
-                <div className='h-[200px] xl:h-[300px]'>
-                    <h1 className="text-[40pt] md:text-7xl lg:text-[66pt] xl:text-[100pt] font-semibold text-white leading-[55px] xl:leading-tight text-left md:text-left mt-16 xl:mt-10">
-                        Pawitsanat
-                        <br />
-                        {isMobile ? 'Boomies' : 'Prapananyosanan'}
+                <div className='h-[400px] xl:h-full'>
+                    <h1 className="text-[40pt] md:text-7xl lg:text-[66pt] xl:text-[80pt] font-semibold text-white leading-[55px] xl:leading-tight text-left md:text-left mt-16 xl:mt-10">
+                        Discover my creative passion and dedication to excellence.
+                        {/* <br />
+                        {isMobile ? 'Boomies' : 'Prapananyosanan'} */}
                     </h1>
                 </div>
                 <div className="flex flex-row md:flex-row justify-between mt-0 lg:mt-20 xl:mt-20">

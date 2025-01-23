@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import SmoothScroll from './providers/smooth-scroll';
 import BackToTopButton from '@/components/ui/BackToTopButton';
 import Cursor from '@/components/ui/Cursor';
+import Footer from '@/components/layout/Footer';
 
 const albertSans = Albert_Sans({ subsets: ['latin'] }); // ตั้งค่า Albert Sans
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           {children}
         </SmoothScroll>
         <BackToTopButton />
+        <Footer />
       </body>
     </html>
   );
