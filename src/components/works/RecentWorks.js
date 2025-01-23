@@ -1,93 +1,27 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import projects from '../../data/projects';
+import { CSSTransition } from "react-transition-group";
 
 const tabs = ["Web & Application", "UX/UI Design", "Graphic Design", "Photography"];
 
-const projects = [
-    // Web & Application
-    {
-        category: "Web & Application",
-        title: "Meeting Creative Company Website",
-        image: "https://i.postimg.cc/yxg3c3Py/meetingweb.jpg",
-        technology: "NEXT.js, TailwindCSS",
-        description: "A website redesigned with NEXT.js for improved performance.",
-        github: "https://github.com/username/meeting-creative",
-    },
-    {
-        category: "Web & Application",
-        title: "E-commerce Front-end",
-        image: "https://i.postimg.cc/KzYMcH3V/ecom.jpg",
-        technology: "React + Vite, TailwindCSS",
-        description: "This project is an e-commerce website frontend developed to practice writing in React and using Tailwind CSS.",
-        github: "https://github.com/username/ecommerce-frontend",
-    },
-    {
-        category: "Web & Application",
-        title: "Ourgram",
-        image: "https://i.postimg.cc/WbZyK73Q/ourgram.jpg",
-        technology: "Altorouter PHP, Javascript, CSS, MySql",
-        description: "This project is a simple web application developed to mimic some basic functionalities of Instagram. It was created using the AltoRouter framework for routing.",
-        github: "https://github.com/username/ourgram",
-    },
-    {
-        category: "Web & Application",
-        title: "Movie Recommendation",
-        image: "https://i.postimg.cc/RZQ67Bcy/movierec.jpg",
-        technology: "React Native",
-        description: "This Movie Recommendation App It is an application that helps users discover popular movies and filter them by genre.",
-        github: "https://github.com/username/movie-recommendation",
-    },
-    // UX/UI Design
-    {
-        category: "UX/UI Design",
-        title: "Mobile App Redesign",
-        image: "https://placehold.co/600x400/",
-        technology: "Figma, Adobe XD",
-        description: "A complete redesign of a mobile banking app to enhance user experience.",
-        github: "https://github.com/username/mobile-app-redesign",
-    },
-    {
-        category: "UX/UI Design",
-        title: "E-commerce UI Kit",
-        image: "https://placehold.co/600x400/",
-        technology: "Figma",
-        description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
-        github: "https://github.com/username/ecommerce-ui-kit",
-    },
-    // Graphic Design
-    {
-        category: "Graphic Design",
-        title: "Brand Logo Design",
-        image: "https://i.postimg.cc/FR1KbK8D/mock6.jpg",
-        technology: "Adobe Illustrator, Photoshop",
-        description: "Created a logo and branding materials for a startup tech company.",
-        github: "https://github.com/username/brand-logo-design",
-    },
-    {
-        category: "Graphic Design",
-        title: "Social Media Graphics",
-        image: "https://i.postimg.cc/Qtq98Mwb/mock4.jpg",
-        technology: "Canva, Photoshop",
-        description: "Designed graphics for a social media campaign that increased engagement by 30%.",
-        github: "https://github.com/username/social-media-graphics",
-    },
-    // Photography
-    {
-        category: "Photography",
-        image: "https://i.postimg.cc/W328rr9k/picc.jpg",
-    },
-    {
-        category: "Photography",
-        image: "https://i.postimg.cc/59KgYX8X/354397081-788469556086765-3935830681538853378-n.jpg",
-    },
-];
-
 export default function RecentWorks() {
     const [activeTab, setActiveTab] = useState(tabs[0]);
+    const [fadeClass, setFadeClass] = useState("fade-in");
+
+    const changeTab = (tab) => {
+        setFadeClass("fade-out");
+        setTimeout(() => {
+            setActiveTab(tab);
+            setFadeClass("fade-in");
+        }, 500); // time for transition to complete before changing the content
+    };
+
     const [selectedProject, setSelectedProject] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPhoto, setSelectedPhoto] = useState("");
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const openModal = (project) => {
         if (project.category === "Photography") {
@@ -104,7 +38,7 @@ export default function RecentWorks() {
     };
 
     return (
-        <section className="recent-works bg-black text-white py-12">
+        <section className="px-4 sm:px-6 xl:px-8 recent-works bg-black text-white py-12">
             <div className="container mx-auto">
                 <div className="flex items-center justify-between border-b border-gray-400 py-5 xl:py-20">
                     <div>
@@ -115,37 +49,99 @@ export default function RecentWorks() {
                 </div>
 
                 {/* Tabs */}
-                <div className="tabs flex justify-start space-x-4 my-10">
-                    {tabs.map((tab, index) => (
+                <div className="my-10">
+                    {/* Dropdown สำหรับหน้าจอเล็ก */}
+                    <div className="block lg:hidden relative">
                         <button
-                            key={index}
-                            onClick={() => setActiveTab(tab)}
-                            className={`tab px-6 py-2 rounded-full font-medium transition ${activeTab === tab
+                            onClick={() => setDropdownOpen(!dropdownOpen)}
+                            className="w-full px-4 py-2 rounded-full border border-white bg-black text-white font-medium flex items-center justify-between"
+                        >
+                            {activeTab}
+                            <svg
+                                className={`w-4 h-4 ml-2 transform transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""
+                                    }`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M19 9l-7 7-7-7"
+                                />
+                            </svg>
+                        </button>
+                        {/* Dropdown */}
+                        <div
+                            className={`absolute top-full left-0 w-full bg-black border border-white rounded-lg overflow-hidden transition-all duration-300 ${dropdownOpen ? "max-h-40 opacity-100 z-50" : "max-h-0 opacity-0 z-0"
+                                }`}
+                            style={{ transitionProperty: "max-height, opacity" }}
+                        >
+                            {tabs.map((tab, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => {
+                                        changeTab(tab);
+                                        setDropdownOpen(false);
+                                    }}
+                                    className="block w-full px-4 py-2 text-left text-white hover:bg-gray-700"
+                                >
+                                    {tab}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Tabs สำหรับหน้าจอใหญ่ */}
+                    <div className="hidden lg:flex justify-start space-x-4">
+                        {tabs.map((tab, index) => (
+                            <button
+                                key={index}
+                                onClick={() => changeTab(tab)}
+                                className={`tab px-6 py-2 rounded-full font-medium transition ${activeTab === tab
                                     ? "bg-white text-black"
                                     : "border border-white text-white"
-                                }`}
-                        >
-                            {tab}
-                        </button>
-                    ))}
+                                    }`}
+                            >
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Projects */}
-                <div className="projects grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                    className={`projects grid gap-6 ${fadeClass} ${activeTab === "Photography"
+                        ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+                        : "grid-cols-1 md:grid-cols-3"
+                        }`}
+                >
                     {projects
                         .filter((project) => project.category === activeTab)
                         .map((project, index) => (
                             <div
                                 key={index}
-                                className="project-card text-start"
+                                className="project-card text-start relative overflow-hidden group cursor-pointer"
                                 onClick={() => openModal(project)}
                             >
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="rounded-lg mb-4"
-                                />
-                                <h3 className="text-lg font-semibold">{project.title}</h3>
+                                {/* รูปโปรเจ็ค */}
+                                <div className="relative overflow-hidden rounded-lg">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="transform transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+
+                                {/* คำว่า See More */}
+                                <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
+                                    Expand
+                                </div>
+
+                                {/* ชื่อโปรเจ็ค */}
+                                <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
                             </div>
                         ))}
                 </div>
@@ -153,8 +149,14 @@ export default function RecentWorks() {
 
             {/* Modal for Projects */}
             {selectedProject && selectedProject.category !== "Photography" && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-xl p-0 relative max-w-3xl w-[full]">
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 px-4"
+                    onClick={closeModal} // เมื่อคลิกนอก modal จะปิด
+                >
+                    <div
+                        className="bg-white rounded-xl p-0 relative max-w-3xl w-full"
+                        onClick={(e) => e.stopPropagation()} // หยุด propagation เมื่อคลิกใน modal
+                    >
                         <button
                             className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
                             onClick={closeModal}
@@ -166,19 +168,22 @@ export default function RecentWorks() {
                             alt={selectedProject.title}
                             className="rounded-lg mb-4"
                         />
-                        <h3 className="mx-4 text-2xl text-black font-semibold mb-2">{selectedProject.title}</h3>
+                        <h3 className="mx-4 text-2xl text-black font-semibold mb-4">{selectedProject.title}</h3>
                         <p className="mx-4 text-black mb-4">Technology : {selectedProject.technology}</p>
                         <p className="mx-4 text-black mb-4">Description : {selectedProject.description}</p>
-                        <div className="mx-3 my-6">
-                            <a
-                                href={selectedProject.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-black text-white px-4 py-2 text-sm lg:px-3 lg:py-2 rounded-lg lg:text-base border border-transparent lg:hover:bg-transparent lg:hover:border-black lg:hover:text-black transition duration-300"
-                            >
-                                View on Github
-                            </a>
-                        </div>
+                        {selectedProject.category !== "UX/UI Design" &&
+                            selectedProject.category !== "Graphic Design" && (
+                                <div className="mx-3 my-6">
+                                    <a
+                                        href={selectedProject.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-black text-white px-4 py-2 text-sm lg:px-3 lg:py-2 rounded-lg lg:text-base border border-transparent lg:hover:bg-transparent lg:hover:border-black lg:hover:text-black transition duration-300"
+                                    >
+                                        View on Github
+                                    </a>
+                                </div>
+                            )}
                     </div>
                 </div>
             )}

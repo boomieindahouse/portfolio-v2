@@ -40,3 +40,21 @@ body {
 .dropdown-content.open {
   max-height: 500px; /* ปรับตามความสูงของเนื้อหา */
 }
+
+
+.projects {
+  display: grid;
+  grid-gap: 1.5rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.projects.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
