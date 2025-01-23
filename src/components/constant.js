@@ -33,12 +33,12 @@ export const programmingLanguages = [
       icon: "/assets/icons/react.png",
     },
     {
-      name: "NextJs",
+      name: "NEXT.js",
       proficiency: 50,
       icon: "/assets/icons/nextjs.png",
     },
     {
-      name: "NuxtJS",
+      name: "NUXT.js",
       proficiency: 30,
       icon: "/assets/icons/nuxt.png",
     },
