@@ -22,7 +22,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="h-[500px] lg:h-[600px] bg-primary flex items-center px-4 sm:px-6 xl:px-8" style={{
+        <div className="h-full py-20 bg-primary flex items-center px-4 sm:px-6 xl:px-8" style={{
             backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px)',
             backgroundSize: '30px 30px',
         }}>
