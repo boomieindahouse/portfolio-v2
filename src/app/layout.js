@@ -21,8 +21,8 @@ export const metadata = {
     "El Boomies",
   ],
   openGraph: {
-    title: "Boomies Portfolio",
-    description: "Pawitsanat Portfolio - Explore what I can do",
+    title: "Prawitsanat Portfolio - Explore what I can do",
+    description: "Welcome to Prawitsanat's portfolio. Dive into a collection of my latest projects, designs, and creations.",
     url: "https://elboomie.vercel.app",
     images: [
       {
