@@ -26,7 +26,7 @@ export const metadata = {
     url: "https://elboomie.vercel.app",
     images: [
       {
-        url: "https://i.postimg.cc/9Qk7rdbm/logo.png",
+        url: "https://i.postimg.cc/Nj630DBT/logo1.png",
         width: 800,
         height: 600,
         alt: "Boomies Logo"
