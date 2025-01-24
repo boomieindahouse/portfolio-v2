@@ -37,7 +37,7 @@ const HeroSection = () => {
                         <p className="text-white text-left md:text-left">Front End Developer</p>
                         <p className="text-white text-left md:text-left">UX/UI Designer</p>
                         <p className="text-white text-left md:text-left">Graphic Designer</p>
-                        <p className="text-white text-left md:text-left">Photography</p>
+                        <p className="text-white text-left md:text-left">Photographer</p>
                     </div>
 
                     <div className="flex flex-col md:flex-row md:items-start justify-between md:space-x-20">
