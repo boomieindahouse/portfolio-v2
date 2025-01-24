@@ -3,12 +3,12 @@
     "name": "Prawitsanat Portfolio",
     "icons": [
         {
-            "src": "/icons/logo1.png",
+            "src": "https://i.postimg.cc/Nj630DBT/logo1.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/icons/logo1.png",
+            "src": "https://i.postimg.cc/Nj630DBT/logo1.png",
             "type": "image/png",
             "sizes": "512x512"
         }
