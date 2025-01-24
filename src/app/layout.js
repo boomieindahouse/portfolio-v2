@@ -10,7 +10,30 @@ const albertSans = Albert_Sans({ subsets: ['latin'] }); // ตั้งค่า
 
 export const metadata = {
   title: 'Boomies Portfolio',
-  description: 'Pawitsanat Portfolio',
+  description: 'Pawitsanat Portfolio - Explore what I can do',
+  keywords: [
+    "Boomieindahouse",
+    "Pawitsanat Prapananyosanan",
+    "Boomies Portfolio",
+    "ภวิศณัฏฐ์ ปภานันยศอนันต์",
+    "ภวิศณัฏฐ์",
+    "Boom Pawitsanat",
+    "El Boomies",
+  ],
+  openGraph: {
+    title: "Boomies Portfolio",
+    description: "Pawitsanat Portfolio - Explore what I can do",
+    url: "https://elboomie.vercel.app",
+    images: [
+      {
+        url: "https://i.postimg.cc/9Qk7rdbm/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Boomies Logo"
+      }
+    ],
+    type: "website"
+  },
 };
 
 export default function RootLayout({ children }) {
