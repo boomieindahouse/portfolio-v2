@@ -39,8 +39,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* ลิงก์ไปยัง manifest.json */}
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* ไอคอน */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="https://i.postimg.cc/Nj630DBT/logo1.png" />
+
+        {/* สีของ theme */}
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body className={`${albertSans.className} min-h-screen bg-black`}> {/* ใช้ albertSans */}
-      <Cursor />
+        <Cursor />
         <SmoothScroll>
           <Navbar />
           {children}
