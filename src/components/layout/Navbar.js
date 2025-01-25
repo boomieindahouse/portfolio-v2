@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null); // ใช้ ref สำหรับการจับเมนู
-  const buttonRef = useRef(null); // ใช้ ref สำหรับปุ่ม Hamburger
+  const menuRef = useRef(null); 
+  const buttonRef = useRef(null); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // ตรวจจับการคลิกข้างนอกเมนูและปิดเมนู
+  // detect click outside menu to close
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -23,8 +23,7 @@ const Navbar = () => {
         setIsOpen(false);
       }
     };
-
-    // ฟังค์ชั่นในการฟังคลิกที่ข้างนอก
+    
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
