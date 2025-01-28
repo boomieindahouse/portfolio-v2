@@ -19,12 +19,13 @@ const FullscreenLoopSection = () => {
         <div className="relative w-full h-[900px] lg:h-[600px] xl:h-[920px] overflow-hidden">
             {/* Current Section for Mobile */}
             <section className="absolute inset-0 w-full h-full block lg:hidden">
-                <img 
+                <img
                     src={getPicture(currentSection)}
                     alt={`Section ${currentSection}`}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                 />
-                
+
                 {/* Section Content Container */}
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="container mx-auto px-4">
@@ -37,7 +38,7 @@ const FullscreenLoopSection = () => {
             {/* Current Section for Desktop */}
             <section className="absolute inset-0 w-full h-full hidden lg:block xl:bg-fixed xl:bg-center xl:bg-cover"
                 style={{ backgroundImage: `url(${getPicture(currentSection)})` }}>
-                
+
                 {/* Section Content Container */}
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="container mx-auto px-4">
@@ -49,7 +50,7 @@ const FullscreenLoopSection = () => {
 
             {/* Next Section (Pre-loaded) for Desktop */}
             <section className="absolute inset-0 w-full h-full hidden lg:block xl:bg-fixed xl:bg-center xl:bg-cover"
-                style={{ backgroundImage: `url(${getPicture(currentSection === totalPictures ? 1 : currentSection + 1)})` }}>
+                style={{ backgroundImage: `url(${getPicture(currentSection)})`, loading: 'lazy' }}>
             </section>
         </div>
     );
