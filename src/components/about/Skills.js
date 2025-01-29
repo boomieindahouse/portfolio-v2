@@ -50,11 +50,11 @@ const SkillsSection = () => {
                 ].map((section) => (
                     <div
                         key={section.key}
-                        className="border-b border-gray-400 py-10"
+                        className="border-b border-gray-400 py-6"
                         onClick={() => toggleSection(section.key)} // ย้าย onClick มาที่ div หลัก
                     >
                         {/* Header */}
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center pt-4">
                             <h3 className="text-2xl font-regular">{section.title}</h3>
                             <span
                                 className={`text-2xl rotate-icon ${openSections.includes(section.key) ? 'open' : ''}`}
