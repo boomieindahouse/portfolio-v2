@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className="bg-second text-white py-12 px-4">
+        <footer className="bg-second text-white pt-10 px-4">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Left Section */}
@@ -58,8 +58,8 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="border-t border-gray-800 pt-6">
-                    <p className="text-gray-400 text-left md:text-center text-sm">
+                <div className="border-t border-gray-800 py-5">
+                    <p className="text-gray-400 text-center md:text-center text-sm">
                         © 2024 Prawitsanat Prapananyosan. All rights reserved.
                     </p>
                 </div>
