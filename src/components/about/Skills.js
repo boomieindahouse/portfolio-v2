@@ -48,16 +48,16 @@ const SkillsSection = () => {
                         items: toolsAndPrograms,
                     },
                 ].map((section) => (
-                    <div key={section.key} className="border-b border-gray-400 py-10">
+                    <div
+                        key={section.key}
+                        className="border-b border-gray-400 py-10"
+                        onClick={() => toggleSection(section.key)} // ย้าย onClick มาที่ div หลัก
+                    >
                         {/* Header */}
-                        <div
-                            className="flex justify-between items-center cursor-pointer"
-                            onClick={() => toggleSection(section.key)}
-                        >
+                        <div className="flex justify-between items-center">
                             <h3 className="text-2xl font-regular">{section.title}</h3>
                             <span
-                                className={`text-2xl rotate-icon ${openSections.includes(section.key) ? 'open' : ''
-                                    }`}
+                                className={`text-2xl rotate-icon ${openSections.includes(section.key) ? 'open' : ''}`}
                             >
                                 {openSections.includes(section.key) ? '-' : '+'}
                             </span>
@@ -65,8 +65,7 @@ const SkillsSection = () => {
 
                         {/* Content */}
                         <div
-                            className={`mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 dropdown-content ${openSections.includes(section.key) ? 'open' : ''
-                                }`}
+                            className={`mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 dropdown-content ${openSections.includes(section.key) ? 'open' : ''}`}
                         >
                             {section.items.map((item) => (
                                 <div
