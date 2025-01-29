@@ -76,6 +76,27 @@ const projects = [
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
     },
+    {
+        category: "Graphic Design",
+        title: "Dental in garden graphic ads",
+        image: "https://i.postimg.cc/sDVWLfWt/graphicmock.jpg",
+        technology: "Adobe Illustrator, Adobe Photoshop",
+        description: "Graphic design provides knowledge about dentistry.",
+    },
+    {
+        category: "Graphic Design",
+        title: "Dental in garden graphic ads",
+        image: "https://i.postimg.cc/zv51jcy1/portmock.jpg",
+        technology: "Adobe Illustrator, Adobe Photoshop",
+        description: "Graphic design provides knowledge about dentistry.",
+    },
+    {
+        category: "Graphic Design",
+        title: "Dental in garden graphic ads",
+        image: "https://i.postimg.cc/XY6DyCBT/portmock2.jpg",
+        technology: "Adobe Illustrator, Adobe Photoshop",
+        description: "Graphic design provides knowledge about dentistry.",
+    },
     // Photography
     {
         category: "Photography",
