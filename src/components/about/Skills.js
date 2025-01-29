@@ -34,13 +34,13 @@ const SkillsSection = () => {
                         title: 'Programming Language',
                         key: 'programming',
                         items: programmingLanguages,
-                        barColor: 'bg-green-500',
+                        barColor: 'bg-teal-500',
                     },
                     {
                         title: 'Framework',
                         key: 'framework',
                         items: frameworks,
-                        barColor: 'bg-blue-500',
+                        barColor: 'bg-blue-400',
                     },
                     {
                         title: 'Tools & Program',
@@ -71,7 +71,7 @@ const SkillsSection = () => {
                             {section.items.map((item) => (
                                 <div
                                     key={item.name}
-                                    className="relative group border border-gray-400 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300"
+                                    className="relative group border border-gray-400 rounded-lg p-4 text-center hover:bg-gray-900 transition duration-300"
                                 >
                                     <img
                                         src={item.icon}

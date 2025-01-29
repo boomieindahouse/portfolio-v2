@@ -42,7 +42,7 @@ const Footer = () => {
 
                     {/* Center Section */}
                     <div className="flex items-start md:items-center justify-start md:justify-center text-left md:text-center">
-                        <p className="text-lg lg:text-xl font-semibold leading-relaxed">
+                        <p className="text-lg lg:text-xl font-medium leading-relaxed">
                             &quot;The future is shaped by your dreams, <br />
                             so stop wasting your time and go to sleep&quot;
                         </p>
