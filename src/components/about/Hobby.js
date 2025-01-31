@@ -64,17 +64,17 @@ const HobbiesSection = () => {
             {/* Modal */}
             {isModalOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 mx-4"
+                    className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 mx-4 "
                     onClick={closeModal}
                 >
                     <div className="relative">
                         <img
                             src={selectedPhoto}
                             alt="Expanded view"
-                            className="max-w-full max-h-screen object-contain"
+                            className="max-w-full max-h-screen object-contain p-4"
                         />
                         <button
-                            className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
+                            className="absolute top-8 right-8 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
                             onClick={closeModal}
                         >
                             Close
