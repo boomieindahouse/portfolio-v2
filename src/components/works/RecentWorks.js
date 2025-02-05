@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import projects from '../../data/projects';
 import ProjectModal from '../layout/ProjectModal';
 import PhotographyModal from '../layout/PhotographyModal';
-import Tabs from '../layout/Tabs'; 
+import Tabs from '../layout/Tabs';
 
 const tabs = ["Web & Application", "UX/UI Design", "Graphic Design", "Photography"];
 
@@ -81,11 +81,10 @@ export default function RecentWorks() {
                                         alt={project.title}
                                         className="transform transition-transform duration-500 group-hover:scale-105"
                                     />
-                                </div>
-
-                                {/* expand */}
-                                <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
-                                    Expand
+                                    {/* expand */}
+                                    <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
+                                        Expand
+                                    </div>
                                 </div>
 
                                 {/* projects title */}
