@@ -114,7 +114,7 @@ const projects = [
     {
         category: "Graphic Design",
         title: "Dental in garden graphic valentine ads",
-        image: "https://i.postimg.cc/sx9czMkM/adsvalentine.jpg",
+        image: "https://i.postimg.cc/jjqd42QR/adsvalentine.jpg",
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design for dental promotions.",
     },
