@@ -111,6 +111,13 @@ const projects = [
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
     },
+    {
+        category: "Graphic Design",
+        title: "Dental in garden graphic valentine ads",
+        image: "https://i.postimg.cc/sx9czMkM/adsvalentine.jpg",
+        technology: "Adobe Illustrator, Adobe Photoshop",
+        description: "Graphic design for dental promotions.",
+    },
     // Photography
     {
         category: "Photography",
