@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Portfolio | Boomieindahouse" />
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta property="og:image" content="https://i.postimg.cc/xTjXwZY3/homepage.png" />
+        <meta property="og:image" content="https://i.postimg.cc/wTJ9bcRQ/Homepage.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Portfolio Logo" />
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Portfolio | Your Name" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
-        <meta name="twitter:image" content="https://i.postimg.cc/xTjXwZY3/homepage.png" />
+        <meta name="twitter:image" content="https://i.postimg.cc/wTJ9bcRQ/Homepage.png" />
         <meta name="twitter:image:alt" content="Portfolio Logo" />
         <meta name="twitter:site" content="@boomiebehumble" />
         <meta name="twitter:creator" content="@boomiebehumble" />
