@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Boomieindahouse — Portfolio" />
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta property="og:image" content="https://elboomie.vercel.app/Homepage.png" />
-        <meta property="og:url" content="https://https://elboomie.vercel.app/" />
+        <meta property="og:url" content="https://elboomie.vercel.app/" />
         <meta property="og:site_name" content="Boomies Portfolio" />
 
         {/* Twitter Card Meta Tags (X / Twitter) */}
