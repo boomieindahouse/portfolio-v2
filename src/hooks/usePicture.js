@@ -1,20 +1,21 @@
 const usePicture = () => {
     const pictures = [
-        'https://i.postimg.cc/2SfVprLS/mock1.png',
-        'https://i.postimg.cc/N0sFMD4h/mock2.png',
-        'https://i.postimg.cc/dVmDwpGm/mock3.png',
-        'https://i.postimg.cc/Qtq98Mwb/mock4.jpg',
-        'https://i.postimg.cc/RFmJxtsh/mock5.jpg',
-        'https://i.postimg.cc/FR1KbK8D/mock6.jpg',
-        'https://i.postimg.cc/W453JZWd/mock7.jpg',
-        'https://i.postimg.cc/ZndKgMTN/mock8.jpg',
-        'https://i.postimg.cc/cLMN58nX/mock9.jpg',
-        'https://i.postimg.cc/sDpVt2QH/mock10.jpg',
-        'https://i.postimg.cc/g2mYdP3z/mock11.jpg',
-        'https://i.postimg.cc/gcLcHsYW/mock12.jpg',
-        'https://i.postimg.cc/tg6Dz8m6/mock13.jpg',
-        'https://i.postimg.cc/9Mjbg1vn/mock14.jpg',
-        'https://i.postimg.cc/DZdg9Lhy/mock15.jpg'
+        'https://elboomie.vercel.app/assets/img/mock1.png',
+        'https://elboomie.vercel.app/assets/img/mock2.png',
+        'https://elboomie.vercel.app/assets/img/mock3.png',
+        'https://elboomie.vercel.app/assets/img/mock4.jpg',
+        'https://elboomie.vercel.app/assets/img/mock5.jpg',
+        'https://elboomie.vercel.app/assets/img/mock6.jpg',
+        'https://elboomie.vercel.app/assets/img/mock7.jpg',
+        'https://elboomie.vercel.app/assets/img/mock8.jpg',
+        'https://elboomie.vercel.app/assets/img/mock9.jpg',
+        'https://elboomie.vercel.app/assets/img/mock10.jpg',
+        'https://elboomie.vercel.app/assets/img/mock11.jpg',
+        'https://elboomie.vercel.app/assets/img/mock12.jpg',
+        'https://elboomie.vercel.app/assets/img/mock13.jpg',
+        'https://elboomie.vercel.app/assets/img/mock14.jpg',
+        'https://elboomie.vercel.app/assets/img/mock15.jpg',
+        'https://elboomie.vercel.app/assets/img/mock16.jpg'
     ];
     
 
