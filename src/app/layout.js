@@ -55,7 +55,6 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Portfolio | Your Name" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta name="twitter:image" content="https://i.postimg.cc/wTJ9bcRQ/Homepage.png" />
-        <meta name="twitter:image:alt" content="Portfolio Logo" />
         <meta name="twitter:site" content="@boomiebehumble" />
         <meta name="twitter:creator" content="@boomiebehumble" />
       </head>
