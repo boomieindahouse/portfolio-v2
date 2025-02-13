@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
 
         {/* SEO Meta Tags */}
-        <meta name="title" content="Portfolio | Boomieindahouse" />
+        <meta name="title" content="Boomieindahouse — Portfolio" />
         <meta name="description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta name="keywords" content="frontend developer, frontend developer and ux/ui designer, react portfolio, next.js portfolio, portfolio, boomieindahouse, elboomie, prawitsanat prapananyosanan, ux/ui designer, pawitsanat, pawitsanat papananyosanan" />
         <meta name="author" content="Boomieindahouse" />
@@ -41,18 +41,16 @@ export default function RootLayout({ children }) {
 
         {/* Open Graph Meta Tags (Facebook & Instagram) */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Portfolio | Boomieindahouse" />
+        <meta property="og:title" content="Boomieindahouse — Portfolio" />
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta property="og:image" content="https://elboomie.vercel.app/Homepage.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Portfolio Logo" />
         <meta property="og:url" content="https://https://elboomie.vercel.app/" />
         <meta property="og:site_name" content="Boomies Portfolio" />
 
         {/* Twitter Card Meta Tags (X / Twitter) */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Portfolio | Your Name" />
+        <meta name="twitter:title" content="Boomieindahouse — Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta name="twitter:image" content="https://elboomie.vercel.app/Homepage.png" />
         <meta name="twitter:site" content="@boomiebehumble" />
