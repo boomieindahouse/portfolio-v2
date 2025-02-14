@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
 
         {/* Twitter Card Meta Tags (X / Twitter) */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Boomieindahouse — Portfolio" />
+        <meta name="twitter:title" content="Boomieindahouse | Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
         <meta name="twitter:image" content="https://elboomie.vercel.app/Homepage.png" />
         <meta name="twitter:site" content="@boomiebehumble" />
