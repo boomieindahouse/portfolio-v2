@@ -8,7 +8,8 @@ import SmoothScroll from "./providers/smooth-scroll";
 import BackToTopButton from "@/components/ui/BackToTopButton";
 import Cursor from "@/components/ui/Cursor";
 import Footer from "@/components/layout/Footer";
-import Loader from "@/components/ui/Loader"; // นำเข้า Loader
+import Loader from "@/components/ui/Loader";
+import { Analytics } from "@vercel/analytics/react";
 
 const albertSans = Albert_Sans({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000); // Loader แสดง 4 วินาที
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -39,7 +40,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Boomieindahouse" />
         <meta name="robots" content="index, follow" />
 
-        {/* Open Graph Meta Tags (Facebook & Instagram) */}
+        {/* Open Graph Meta Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Boomieindahouse — Portfolio" />
         <meta property="og:description" content="Welcome to my portfolio website showcasing my projects and skills." />
@@ -47,7 +48,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://elboomie.vercel.app/" />
         <meta property="og:site_name" content="Boomies Portfolio" />
 
-        {/* Twitter Card Meta Tags (X / Twitter) */}
+        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Boomieindahouse | Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website showcasing my projects and skills." />
@@ -57,7 +58,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${albertSans.className} min-h-screen bg-black`}>
         {loading ? (
-          <Loader /> // แสดง Loader ก่อน
+          <Loader />
         ) : (
           <>
             <Cursor />
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
             </SmoothScroll>
             <BackToTopButton />
             <Footer />
+            <Analytics />
           </>
         )}
       </body>
