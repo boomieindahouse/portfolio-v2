@@ -12,7 +12,7 @@ const FullscreenLoopSection = () => {
         const interval = setInterval(() => {
             setCurrentSection((prev) => (prev === totalPictures ? 1 : prev + 1));
             setLowQualityLoaded(false);
-        }, 1200);
+        }, 1600);
 
         return () => clearInterval(interval);
     }, [totalPictures]);
