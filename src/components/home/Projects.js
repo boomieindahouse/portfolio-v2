@@ -9,12 +9,12 @@ const PortfolioSection = () => {
             image: "https://i.postimg.cc/RZQ67Bcy/movierec.jpg",
         },
         {
-            title: "Ecommerce Front-end",
-            image: "https://i.postimg.cc/KzYMcH3V/ecom.jpg",
+            title: "UX/UI Design",
+            image: "https://i.postimg.cc/cC1zhxDr/uxuifigma.jpg",
         },
         {
             title: "Graphic Ads Design",
-            image: "https://i.postimg.cc/FKpS44z3/ads.jpg",
+            image: "https://i.postimg.cc/sDVWLfWt/graphicmock.jpg",
         },
     ];
 
