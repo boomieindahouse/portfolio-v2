@@ -198,7 +198,7 @@ const projects = [
     // Photography
     {
         category: "Photography",
-        images: "https://i.postimg.cc/W328rr9k/picc.jpg",
+        images: ["https://i.postimg.cc/W328rr9k/picc.jpg"],
     },
     {
         category: "Photography",
