@@ -106,9 +106,20 @@ const projects = [
         category: "UX/UI Design",
         title: "Meeting Creative Website Redesign",
         images: [
-            "https://i.postimg.cc/XJ6zy7fR/2025-02-18-091756.png",
+            "",
             "https://i.postimg.cc/qBmM2zqV/2025-02-18-110702.png",
             "https://i.postimg.cc/VvHfwHpL/2025-02-18-110719.png",
+        ],
+        technology: "Figma",
+        description: "Designed a UI kit for company website.",
+    },
+    {
+        category: "My Portfolio Design",
+        title: "My Portfolio Website Design",
+        images: [
+            "https://i.postimg.cc/yxt2cBXM/2025-02-18-153542.png",
+            "https://i.postimg.cc/05BTLdRV/2025-02-18-153643.png",
+            "https://i.postimg.cc/6psDQWQR/2025-02-18-153736.png",
         ],
         technology: "Figma",
         description: "Designed a UI kit for company website.",
