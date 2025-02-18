@@ -4,7 +4,7 @@ const PhotographyModal = ({ selectedPhoto, closeModal }) => {
     console.log("Selected Photo:", selectedPhoto);
     return (
         <div
-            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 mx-4"
+            className="fixed inset-0 flex items-center justify-center z-50 mx-4"
             onClick={closeModal}
         >
             <div className="relative">
