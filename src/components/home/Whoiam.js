@@ -4,6 +4,7 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Icon } from '@iconify/react'; // ถ้าใช้ Iconify
 // import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa'; // ถ้าใช้ FontAwesome
+import Link from 'next/link';
 
 const AboutSection = () => {
     return (
@@ -16,7 +17,7 @@ const AboutSection = () => {
                         </h2>
                     </div>
                     <div>
-                        <a href="/about" className='text-gray-400 hover:underline hover:text-white transition-colors duration-300 text-sm lg:text-xl xl:text-2xl'>See more</a>
+                        <Link href="/about" className='text-gray-400 hover:underline hover:text-white transition-colors duration-300 text-sm lg:text-xl xl:text-2xl'>See more</Link>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row xl:flex-row justify-between mt-5 xl:mt-16">

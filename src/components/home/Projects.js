@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const PortfolioSection = () => {
     const projects = [
         {
@@ -28,9 +30,9 @@ const PortfolioSection = () => {
                         </h2>
                     </div>
                     <div>
-                        <a href="/works" className="text-gray-400 hover:underline hover:text-white transition-colors duration-300 text-sm lg:text-xl xl:text-2xl">
+                        <Link href="/works" className="text-gray-400 hover:underline hover:text-white transition-colors duration-300 text-sm lg:text-xl xl:text-2xl">
                             See more
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-12">
