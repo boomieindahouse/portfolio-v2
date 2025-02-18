@@ -27,8 +27,6 @@ export default function RecentWorks() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const openModal = (project) => {
-        console.log("Project clicked:", project);
-        console.log("Image in project:", project.image || project.images);
 
         if (project.category === 'Photography') {
             setSelectedPhoto(project.image || project.images);  // เผื่อชื่อเป็น 'images' แทน
@@ -105,7 +103,6 @@ export default function RecentWorks() {
             {/* Modal for Photography */}
             {isModalOpen && (
                 <>
-                    {console.log("Selected Photo before modal:", selectedPhoto)}
                     <PhotographyModal selectedPhoto={selectedPhoto} closeModal={closeModal} />
                 </>
             )}
