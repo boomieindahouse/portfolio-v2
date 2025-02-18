@@ -12,12 +12,6 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
                 className="bg-white rounded-xl pb-4 relative max-w-3xl w-full"
                 onClick={(e) => e.stopPropagation()}
             >
-                <button
-                    className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
-                    onClick={closeModal}
-                >
-                    Close
-                </button>
 
                 {/* Carousel พร้อมแก้ไข Focus State */}
                 <Carousel
@@ -42,15 +36,15 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
                                 className="rounded-t-lg pointer-events-none" // ✅ ป้องกัน Hover Selection
                                 draggable={false}
                             />
-                            <button
-                                className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
-                                onClick={closeModal}
-                            >
-                                Close
-                            </button>
                         </div>
                     ))}
                 </Carousel>
+                <button
+                    className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"
+                    onClick={closeModal}
+                >
+                    Close
+                </button>
 
                 <h3 className="text-2xl text-zinc-700 font-semibold mt-4 px-4">{selectedProject.title}</h3>
                 <p className="text-zinc-700 mt-2 px-4"><span className="font-semibold">Technology</span> : {selectedProject.technology}</p>

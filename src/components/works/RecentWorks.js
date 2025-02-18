@@ -18,7 +18,7 @@ export default function RecentWorks() {
         setTimeout(() => {
             setActiveTab(tab);
             setFadeClass('fade-in');
-        }, 500); // time for transition to complete before changing the content
+        }, 500);
     };
 
     const [selectedProject, setSelectedProject] = useState(null);
