@@ -61,6 +61,13 @@ const projects = [
         technology: "Figma",
         description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
     },
+    {
+        category: "UX/UI Design",
+        title: "Meeting Creative Website Redesign",
+        image: "https://i.postimg.cc/XJ6zy7fR/2025-02-18-091756.png",
+        technology: "Figma",
+        description: "Designed a UI kit for company website.",
+    },
     // Graphic Design
     {
         category: "Graphic Design",
