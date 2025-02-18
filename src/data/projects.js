@@ -114,7 +114,7 @@ const projects = [
         description: "Designed a UI kit for company website.",
     },
     {
-        category: "My Portfolio Design",
+        category: "UX/IO Design",
         title: "My Portfolio Website Design",
         images: [
             "https://i.postimg.cc/yxt2cBXM/2025-02-18-153542.png",
