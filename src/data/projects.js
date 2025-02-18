@@ -117,12 +117,12 @@ const projects = [
         category: "UX/UI Design",
         title: "My Portfolio Website Design",
         images: [
-            "https://i.postimg.cc/yxt2cBXM/2025-02-18-153542.png",
+            "https://i.postimg.cc/N0v9bHjM/2025-02-18-154725.png",
             "https://i.postimg.cc/05BTLdRV/2025-02-18-153643.png",
             "https://i.postimg.cc/6psDQWQR/2025-02-18-153736.png",
         ],
         technology: "Figma",
-        description: "Designed a UI kit for company website.",
+        description: "Designed a UI kit for my portfolio website.",
     },
     // Graphic Design
     {
