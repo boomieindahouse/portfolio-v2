@@ -1,16 +1,16 @@
 const PortfolioSection = () => {
     const projects = [
         {
-            title: "Meeting Creative Company",
+            title: "Website & Application Development",
             image: "https://i.postimg.cc/yxg3c3Py/meetingweb.jpg",
-        },
-        {
-            title: "Movie Recommendation",
-            image: "https://i.postimg.cc/RZQ67Bcy/movierec.jpg",
         },
         {
             title: "UX/UI Design",
             image: "https://i.postimg.cc/cC1zhxDr/uxuifigma.jpg",
+        },
+        {
+            title: "Photography",
+            image: "https://i.postimg.cc/W328rr9k/picc.jpg",
         },
         {
             title: "Graphic Ads Design",
