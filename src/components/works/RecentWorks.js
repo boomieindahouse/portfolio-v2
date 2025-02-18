@@ -77,7 +77,7 @@ export default function RecentWorks() {
                                 {/* projects img */}
                                 <div className="relative overflow-hidden rounded-lg">
                                     <img
-                                        src={project.image}
+                                        src={project.images}
                                         alt={project.title}
                                         className="transform transition-transform duration-500 group-hover:scale-105"
                                     />
