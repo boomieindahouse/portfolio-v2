@@ -1,12 +1,20 @@
 'use client'
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import { Icon } from '@iconify/react'; // ถ้าใช้ Iconify
-// import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa'; // ถ้าใช้ FontAwesome
+import { Icon } from '@iconify/react';
 import Link from 'next/link';
 
 const AboutSection = () => {
+    const birthYear = 2000;
+    const birthMonth = 10;
+    const today = new Date();
+    let age = today.getFullYear() - birthYear;
+
+    if (today.getMonth() + 1 < birthMonth) {
+        age--;
+    }
+
     return (
         <section className="px-4 sm:px-6 xl:px-8 bg-primary text-white">
             <div className="container mx-auto">
@@ -37,7 +45,7 @@ const AboutSection = () => {
                         </div>
                         <div className='mb-5 xl:mb-10'>
                             <p className="text-lg mb-6 mt-4">
-                                I&apos;m a creative and passionate Front-end Developer, UX/UI Designer, and Graphic Designer. I specialize in crafting intuitive and visually stunning digital experiences.
+                                Hello my name is Boomie. I&apos;m a {age}-year-old creative and passionate Front-end Developer, UX/UI Designer, and Graphic Designer. I specialize in crafting intuitive and visually stunning digital experiences.
                             </p>
                             <p className="text-lg">
                                 Besides my work in design and development, I also have a deep love for photography. I believe in capturing the beauty of the world through my lens, which adds an extra layer of creativity and inspiration to my projects.
@@ -56,26 +64,17 @@ const AboutSection = () => {
                         {/* Social Media Icons */}
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                             <div className="flex space-x-6">
-                                {/* ใช้ Iconify หรือ FontAwesome */}
                                 <a href="https://linkedin.com/in/prawitsanat" target="_blank" rel="noopener noreferrer">
                                     <Icon icon="akar-icons:linkedin-fill" className="text-3xl text-white hover:text-blue-500" />
-                                    {/* หรือ ถ้าใช้ FontAwesome
-                                    <FaLinkedin className="text-3xl text-white" /> */}
                                 </a>
                                 <a href="https://github.com/boomieindahouse" target="_blank" rel="noopener noreferrer">
                                     <Icon icon="akar-icons:github-fill" className="text-3xl text-white hover:text-purple-600" />
-                                    {/* หรือ ถ้าใช้ FontAwesome
-                                    <FaGithub className="text-3xl text-white" /> */}
                                 </a>
                                 <a href="https://www.instagram.com/boomieindahouse/" target="_blank" rel="noopener noreferrer">
                                     <Icon icon="akar-icons:instagram-fill" className="text-3xl text-white hover:bg-text-gradient hover:rounded-lg" />
-                                    {/* หรือ ถ้าใช้ FontAwesome
-                                    <FaInstagram className="text-3xl text-white" /> */}
                                 </a>
                                 <a href="mailto:prawitsanat@hotmail.com" target="_blank" rel="noopener noreferrer">
                                     <Icon icon="si:mail-line" className="text-3xl text-white hover:text-blue-500" />
-                                    {/* หรือ ถ้าใช้ FontAwesome
-                                    <FaEnvelope className="text-3xl text-white" /> */}
                                 </a>
                             </div>
                         </div>
