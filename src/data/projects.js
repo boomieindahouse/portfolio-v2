@@ -4,13 +4,13 @@ const projects = [
         category: "Web & Application",
         title: "Meeting Creative Company Website",
         images: [
-            "https://i.postimg.cc/yxg3c3Py/meetingweb.jpg",
-            "https://i.postimg.cc/mgzjNzSP/1.png",
-            "https://i.postimg.cc/4xD58f8B/2.png",
-            "https://i.postimg.cc/k5Wyz0z9/3.png",
-            "https://i.postimg.cc/QxM0Cn9k/4.png",
-            "https://i.postimg.cc/8Pnw6BL8/5.png",
-            "https://i.postimg.cc/66cM9N3p/6.png"
+            "https://elboomie.vercel.app/assets/img/meetingweb.jpg",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/4.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/5.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/6.png"
         ],
         technology: "NEXT.js, TailwindCSS",
         description: "A website designed and developed with NEXTjs and Tailwind for better performance. It is designed and developed only for the front-end. It is an internship project done during the internship.",
@@ -20,15 +20,15 @@ const projects = [
         category: "Web & Application",
         title: "E-commerce Front-end",
         images: [
-            "https://i.postimg.cc/KzYMcH3V/ecom.jpg",
-            "https://i.postimg.cc/zGCbrqzd/ecom1.png",
-            "https://i.postimg.cc/BvJ8ZRtJ/ecom2.png",
-            "https://i.postimg.cc/fRntpVNt/ecom3.png",
-            "https://i.postimg.cc/9f1DD1qZ/ecom4.png",
-            "https://i.postimg.cc/vBBcf9Wj/ecom5.png",
-            "https://i.postimg.cc/xC4qRC5d/ecom6.png",
-            "https://i.postimg.cc/6q4q1Xbf/ecom7.png",
-            "https://i.postimg.cc/3WMRscP5/ecom8.png"
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom.jpg",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom1.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom2.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom3.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom4.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom5.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom6.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom7.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom8.png"
         ],
         technology: "React + Vite, TailwindCSS",
         description: "This project is an e-commerce website frontend developed to practice writing in React and using Tailwind CSS.",
@@ -38,15 +38,15 @@ const projects = [
         category: "Web & Application",
         title: "Ourgram",
         images: [
-            "https://i.postimg.cc/WbZyK73Q/ourgram.jpg",
-            "https://i.postimg.cc/XYBMGvG8/og1.png",
-            "https://i.postimg.cc/bNBcwnJr/og2.png",
-            "https://i.postimg.cc/L54KnBLY/og3.png",
-            "https://i.postimg.cc/k4mddd5y/og4.png",
-            "https://i.postimg.cc/L5ydfY3y/og5.png",
-            "https://i.postimg.cc/qMRHrwpW/og6.png",
-            "https://i.postimg.cc/ydyC1rgC/og7.png",
-            "https://i.postimg.cc/mZVWKJWQ/og8.png"
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/ourgram.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og1.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og2.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og3.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og4.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og5.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og6.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og7.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/og8.png"
         ],
         technology: "Altorouter PHP, Javascript, CSS, MySql",
         description: "This project is a simple web application developed to mimic some basic functionalities of Instagram. It was created using the AltoRouter framework for routing.",
@@ -56,10 +56,10 @@ const projects = [
         category: "Web & Application",
         title: "Movie Recommendation",
         images: [
-            "https://i.postimg.cc/RZQ67Bcy/movierec.jpg",
+            "https://elboomie.vercel.app/assets/img/webproject/movierec/movierec.jpg",
             'https://elboomie.vercel.app/assets/img/mock13.jpg',
             'https://elboomie.vercel.app/assets/img/mock14.jpg',
-            'https://elboomie.vercel.app/assets/img/mock15.jpg',
+            'https://elboomie.vercel.app/assets/img/mock15.jpg'
         ],
         technology: "React Native",
         description: "This Movie Recommendation App It is an application that helps users discover popular movies and filter them by genre.",
@@ -70,7 +70,12 @@ const projects = [
         category: "UX/UI Design",
         title: "Vongchavalitkul University Website Redesign",
         images: [
-            "https://placehold.co/800x500?text=wait+for+project+deployment",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu1.png",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu2.png",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu3.png",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu4.png",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu5.png",
+            "https://elboomie.vercel.app/assets/img/uxui/vu/vu6.png"
         ],
         technology: "Figma",
         description: "A complete redesign of a Vongchavalitkul University Website",
@@ -79,7 +84,14 @@ const projects = [
         category: "UX/UI Design",
         title: "Kaspersky Icom Website Redesign",
         images: [
-            "https://placehold.co/800x500?text=wait+for+project+deployment",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas1.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas2.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas3.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas4.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas5.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas6.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas7.png",
+            "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas8.png"
         ],
         technology: "Figma",
         description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
@@ -88,7 +100,18 @@ const projects = [
         category: "UX/UI Design",
         title: "DN Medical Center Website Redesign",
         images: [
-            "https://placehold.co/800x500?text=wait+for+project+deployment",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn1.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn2.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn3.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn4.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn5.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn6.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn7.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn8.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn9.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn10.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn11.png",
+            "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn12.png"
         ],
         technology: "Figma",
         description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
@@ -97,7 +120,13 @@ const projects = [
         category: "UX/UI Design",
         title: "Apureda Website Redesign",
         images: [
-            "https://placehold.co/800x500?text=wait+for+project+deployment",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap1.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap2.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap3.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap4.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap5.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap6.png",
+            "https://elboomie.vercel.app/assets/img/uxui/apd/ap7.png"
         ],
         technology: "Figma",
         description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
@@ -106,9 +135,13 @@ const projects = [
         category: "UX/UI Design",
         title: "Meeting Creative Website Redesign",
         images: [
-            "https://i.postimg.cc/XJ6zy7fR/2025-02-18-091756.png",
-            "https://i.postimg.cc/qBmM2zqV/2025-02-18-110702.png",
-            "https://i.postimg.cc/VvHfwHpL/2025-02-18-110719.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/4.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/5.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/mtwf.png",
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/mtmu.png"
         ],
         technology: "Figma",
         description: "Designed a UI kit for company website.",
@@ -117,9 +150,16 @@ const projects = [
         category: "UX/UI Design",
         title: "My Portfolio Website Design",
         images: [
-            "https://i.postimg.cc/N0v9bHjM/2025-02-18-154725.png",
-            "https://i.postimg.cc/05BTLdRV/2025-02-18-153643.png",
-            "https://i.postimg.cc/6psDQWQR/2025-02-18-153736.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p1.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p2.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p3.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p4.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p5.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p6.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p7.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p8.png",
+            "https://elboomie.vercel.app/assets/img/uxui/portfolio/p9.png",
+            "https://elboomie.vercel.app/assets/img/portfoliodesign.png"
         ],
         technology: "Figma",
         description: "Designed a UI kit for my portfolio website.",
@@ -129,7 +169,7 @@ const projects = [
         category: "Graphic Design",
         title: "Graphic design wishing new year",
         images: [
-            "https://i.postimg.cc/FR1KbK8D/mock6.jpg",
+            "https://elboomie.vercel.app/assets/img/works/mock6.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design greeting new year 2025",
@@ -138,7 +178,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/Qtq98Mwb/mock4.jpg",
+            "https://elboomie.vercel.app/assets/img/works/mock4.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -147,7 +187,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/sDVWLfWt/graphicmock.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/graphicmock.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -156,7 +196,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/zv51jcy1/portmock.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/portmock.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -165,7 +205,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/XY6DyCBT/portmock2.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/portmock2.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -174,7 +214,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/13xS0k9f/dentalmock.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/dentalmock.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -183,7 +223,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic valentine ads",
         images: [
-            "https://i.postimg.cc/tRFZ9yxF/valentineoring.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/valentineoring.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design for dental promotions.",
@@ -192,7 +232,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic ads",
         images: [
-            "https://i.postimg.cc/YSsBNTZX/dentalads.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/dentalads.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design provides knowledge about dentistry.",
@@ -201,7 +241,7 @@ const projects = [
         category: "Graphic Design",
         title: "Dental in garden graphic valentine ads",
         images: [
-            "https://i.postimg.cc/jjqd42QR/adsvalentine.jpg",
+            "https://elboomie.vercel.app/assets/img/graphic/adsvalentine.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
         description: "Graphic design for dental promotions.",
@@ -209,91 +249,103 @@ const projects = [
     // Photography
     {
         category: "Photography",
-        images: ["https://i.postimg.cc/W328rr9k/picc.jpg"],
+        images: ["https://elboomie.vercel.app/assets/img/picc.jpg"],
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/59KgYX8X/354397081-788469556086765-3935830681538853378-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/2.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/zDxyprPR/355392723-770796901451094-8949239429140119245-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/3.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/NjHLgrG1/360014201-306421095138778-4102471241018283081-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/4.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/HsjVhhfv/354503949-213662014954149-1626274355653316251-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/5.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/J0YthNBQ/409495588-1344033926237695-7849092120105937832-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/6.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/SN5JFG4S/403832295-371728835248282-1590041472945275250-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/7.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/Y00xD7B2/355393367-200712936272602-6289766086379571234-n.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/8.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/2yzztCL3/121.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/9.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/T1Y69QBD/123421.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/10.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/B65SNj6d/123.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/11.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/Y0nwyYwy/346457.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/12.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/XYZnmHqK/12343.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/13.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/3Rh7y3B9/32544.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/14.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/MTJZy7W7/3357.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/15.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/Sxwmh6YB/32141.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/16.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/7L0wY5gf/43678.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/17.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/c1m1ntP3/4654.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/18.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/j5hTPB3T/47642.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/19.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/XqQVSt9L/525.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/20.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/zX2JdZzX/6899.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/21.jpg",
     },
     {
         category: "Photography",
-        images: "https://i.postimg.cc/Kv8GrvyH/5754.jpg",
+        images: "https://elboomie.vercel.app/assets/img/photography/22.jpg",
+    },
+    {
+        category: "Photography",
+        images: "https://elboomie.vercel.app/assets/img/photography/23.jpg",
+    },
+    {
+        category: "Photography",
+        images: "https://elboomie.vercel.app/assets/img/photography/24.jpg",
+    },
+    {
+        category: "Photography",
+        images: "https://elboomie.vercel.app/assets/img/photography/25.jpg",
     },
 ];
 

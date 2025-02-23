@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 const HobbiesSection = () => {
     const photos = [
-        "https://i.postimg.cc/W328rr9k/picc.jpg",
-        "https://i.postimg.cc/Y00xD7B2/355393367-200712936272602-6289766086379571234-n.jpg",
-        "https://i.postimg.cc/59KgYX8X/354397081-788469556086765-3935830681538853378-n.jpg",
-        "https://i.postimg.cc/zDxyprPR/355392723-770796901451094-8949239429140119245-n.jpg"
+        "https://elboomie.vercel.app/assets/img/picc.jpg",
+        "https://elboomie.vercel.app/assets/img/hooby/hobby2.jpg",
+        "https://elboomie.vercel.app/assets/img/hooby/hobby3.jpg",
+        "https://elboomie.vercel.app/assets/img/hooby/hobby4.jpg"
     ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);

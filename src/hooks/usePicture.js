@@ -1,21 +1,21 @@
 const usePicture = () => {
     const pictures = [
-        'https://elboomie.vercel.app/assets/img/mock1.png',
-        'https://elboomie.vercel.app/assets/img/mock2.png',
-        'https://elboomie.vercel.app/assets/img/mock3.png',
-        'https://elboomie.vercel.app/assets/img/mock4.jpg',
-        'https://elboomie.vercel.app/assets/img/mock5.jpg',
-        'https://elboomie.vercel.app/assets/img/mock6.jpg',
-        'https://elboomie.vercel.app/assets/img/mock7.jpg',
-        'https://elboomie.vercel.app/assets/img/mock8.jpg',
-        'https://elboomie.vercel.app/assets/img/mock9.jpg',
-        'https://elboomie.vercel.app/assets/img/mock10.jpg',
-        'https://elboomie.vercel.app/assets/img/mock11.jpg',
-        'https://elboomie.vercel.app/assets/img/mock12.jpg',
-        'https://elboomie.vercel.app/assets/img/mock13.jpg',
-        'https://elboomie.vercel.app/assets/img/mock14.jpg',
-        'https://elboomie.vercel.app/assets/img/mock15.jpg',
-        'https://elboomie.vercel.app/assets/img/mock16.jpg'
+        'https://elboomie.vercel.app/assets/img/works/mock1.png',
+        'https://elboomie.vercel.app/assets/img/works/mock2.png',
+        'https://elboomie.vercel.app/assets/img/works/mock3.png',
+        'https://elboomie.vercel.app/assets/img/works/mock4.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock5.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock6.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock7.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock8.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock9.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock10.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock11.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock12.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock13.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock14.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock15.jpg',
+        'https://elboomie.vercel.app/assets/img/works/mock16.jpg'
     ];
     
 

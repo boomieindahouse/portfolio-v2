@@ -7,16 +7,16 @@ const SplitImageSection = () => {
     const [rightImageIndex, setRightImageIndex] = useState(0);
 
     const leftImages = [
-        "https://i.postimg.cc/zDxyprPR/355392723-770796901451094-8949239429140119245-n.jpg",
-        "https://i.postimg.cc/Y00xD7B2/355393367-200712936272602-6289766086379571234-n.jpg",
-        "https://i.postimg.cc/NjHLgrG1/360014201-306421095138778-4102471241018283081-n.jpg",
-        "https://i.postimg.cc/59KgYX8X/354397081-788469556086765-3935830681538853378-n.jpg"
+        "https://elboomie.vercel.app/assets/img/hobby/hobby4.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby2.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby5.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby3.jpg"
     ];
 
     const rightImages = [
-        "https://i.postimg.cc/W328rr9k/picc.jpg",
-        "https://i.postimg.cc/SN5JFG4S/403832295-371728835248282-1590041472945275250-n.jpg",
-        "https://i.postimg.cc/J0YthNBQ/409495588-1344033926237695-7849092120105937832-n.jpg"
+        "https://elboomie.vercel.app/assets/img/picc.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby6.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby7.jpg"
     ];
 
     useEffect(() => {

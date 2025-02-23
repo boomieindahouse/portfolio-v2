@@ -4,19 +4,19 @@ const PortfolioSection = () => {
     const projects = [
         {
             title: "Website & Application Development",
-            image: "https://i.postimg.cc/yxg3c3Py/meetingweb.jpg",
+            image: "https://elboomie.vercel.app/assets/img/works/meetingweb.jpg", //change already
         },
         {
             title: "UX/UI Design",
-            image: "https://i.postimg.cc/cC1zhxDr/uxuifigma.jpg",
+            image: "https://elboomie.vercel.app/assets/img/works/uxuifigma.jpg", //change already
         },
         {
             title: "Photography",
-            image: "https://i.postimg.cc/W328rr9k/picc.jpg",
+            image: "https://elboomie.vercel.app/assets/img/picc.jpg", //change already
         },
         {
             title: "Graphic Ads Design",
-            image: "https://i.postimg.cc/sDVWLfWt/graphicmock.jpg",
+            image: "https://elboomie.vercel.app/assets/img/works/mock4.jpg", //change already
         },
     ];
 
