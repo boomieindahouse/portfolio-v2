@@ -78,7 +78,7 @@ export default function RecentWorks() {
                                 {/* projects img */}
                                 <div className="relative overflow-hidden rounded-lg">
                                     <img
-                                        src={project.images}
+                                        src={project.images[0]}  // ดึงรูปแรกจาก Array
                                         alt={project.title}
                                         className="transform transition-transform duration-500 group-hover:scale-105"
                                     />
