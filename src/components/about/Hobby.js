@@ -5,9 +5,9 @@ import { useState } from 'react';
 const HobbiesSection = () => {
     const photos = [
         "https://elboomie.vercel.app/assets/img/picc.jpg",
-        "https://elboomie.vercel.app/assets/img/hooby/hobby2.jpg",
-        "https://elboomie.vercel.app/assets/img/hooby/hobby3.jpg",
-        "https://elboomie.vercel.app/assets/img/hooby/hobby4.jpg"
+        "https://elboomie.vercel.app/assets/img/hobby/hobby2.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby3.jpg",
+        "https://elboomie.vercel.app/assets/img/hobby/hobby4.jpg"
     ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
