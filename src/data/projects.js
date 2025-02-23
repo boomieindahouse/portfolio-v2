@@ -135,6 +135,7 @@ const projects = [
         category: "UX/UI Design",
         title: "Meeting Creative Website Redesign",
         images: [
+            "https://elboomie.vercel.app/assets/img/webproject/meeting/mt.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
