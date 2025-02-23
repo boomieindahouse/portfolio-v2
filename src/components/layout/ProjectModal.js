@@ -21,7 +21,6 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
                     swipeable
                     emulateTouch
                     dynamicHeight
-                    autoPlay
                     interval={2000}
                     onSwipeStart={(e) => {
                         e.stopPropagation();

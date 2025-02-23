@@ -27,9 +27,8 @@ export default function RecentWorks() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const openModal = (project) => {
-
         if (project.category === 'Photography') {
-            setSelectedPhoto(project.image || project.images);  // เผื่อชื่อเป็น 'images' แทน
+            setSelectedPhoto(project.image || project.images);
             setIsModalOpen(true);
         } else {
             setSelectedProject(project);
@@ -78,7 +77,7 @@ export default function RecentWorks() {
                                 {/* projects img */}
                                 <div className="relative overflow-hidden rounded-lg">
                                     <img
-                                        src={project.images[0]}  // ดึงรูปแรกจาก Array
+                                        src={activeTab === 'Photography' ? project.images : project.images[0]}
                                         alt={project.title}
                                         className="transform transition-transform duration-500 group-hover:scale-105"
                                     />
@@ -102,9 +101,7 @@ export default function RecentWorks() {
 
             {/* Modal for Photography */}
             {isModalOpen && (
-                <>
-                    <PhotographyModal selectedPhoto={selectedPhoto} closeModal={closeModal} />
-                </>
+                <PhotographyModal selectedPhoto={selectedPhoto} closeModal={closeModal} />
             )}
         </section>
     );

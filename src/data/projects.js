@@ -13,7 +13,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/meeting/6.png"
         ],
         technology: "NEXT.js, TailwindCSS",
-        description: "A website designed and developed with NEXTjs and Tailwind for better performance. It is designed and developed only for the front-end. It is an internship project done during the internship.",
+        description: "The web application for Meeting Creative is designed to showcase the company's expertise in web design and development, graphic design, and network systems. This interactive platform provides a seamless user experience with key features such as a responsive layout, intuitive navigation, and engaging visual elements. Users can explore a wide range of services, view detailed project portfolios, and connect with the team easily. The design reflects Meeting Creative's commitment to delivering high-quality solutions and creating an impressive online presence for their clients.",
         github: "https://github.com/boomieindahouse/meeting-redesign-th",
     },
     {
@@ -31,7 +31,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom8.png"
         ],
         technology: "React + Vite, TailwindCSS",
-        description: "This project is an e-commerce website frontend developed to practice writing in React and using Tailwind CSS.",
+        description: "This eCommerce website UI is a practice project designed to enhance my skills in using React and Tailwind CSS. The project involves building the user interface based on a design created in Figma.",
         github: "https://github.com/boomieindahouse/ecommerce",
     },
     {
@@ -49,7 +49,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/ourgram/og8.png"
         ],
         technology: "Altorouter PHP, Javascript, CSS, MySql",
-        description: "This project is a simple web application developed to mimic some basic functionalities of Instagram. It was created using the AltoRouter framework for routing.",
+        description: "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts. This project demonstrates the practical application of database management principles, focusing on efficient data storage, retrieval, and user interface integration.",
         github: "https://github.com/boomieindahouse/ourgram",
     },
     {
@@ -62,7 +62,7 @@ const projects = [
             'https://elboomie.vercel.app/assets/img/works/mock15.jpg'
         ],
         technology: "React Native",
-        description: "This Movie Recommendation App It is an application that helps users discover popular movies and filter them by genre.",
+        description: "The Movie Recommendation App is a project developed using React Native, originally written in Flutter for an application development course. This application helps users discover popular movies and filter them by genre. It leverages the TMDB API to provide up-to-date movie information and recommendations. Key features include user-friendly navigation, movie categorization by genre, and detailed movie information. This project demonstrates my ability to work with both Flutter and React Native, showcasing my skills in mobile application development and API integration.",
         github: "https://github.com/boomieindahouse/MovieApp",
     },
     // UX/UI Design
@@ -78,7 +78,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/uxui/vu/vu6.png"
         ],
         technology: "Figma",
-        description: "A complete redesign of a Vongchavalitkul University Website",
+        description: "UX/UI design for Vongchavalitkul University's website focuses on creating a modern, user-friendly, and cohesive experience. Key features include a clear navigation menu, categorized information layout, mobile-friendly design, and engaging visuals. We aim to reflect the university's identity while ensuring ease of use for students, staff, and visitors.",
     },
     {
         category: "UX/UI Design",
@@ -94,7 +94,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/uxui/kaspersky/kas8.png"
         ],
         technology: "Figma",
-        description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
+        description: "UX/UI design for ICOM's semi eCommerce website, a trusted distributor of Kaspersky, ensures a seamless and intuitive shopping experience. The design highlights key features such as product catalogs, secure purchase options, clear navigation, and customer support. We aim to create a professional, user-friendly platform that boosts customer confidence and enhances the purchasing journey.",
     },
     {
         category: "UX/UI Design",
@@ -114,7 +114,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/uxui/dncenter/dn12.png"
         ],
         technology: "Figma",
-        description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
+        description: "UX/UI design for DN Medical Center's website focuses on providing a streamlined and efficient shopping experience for medical products. The design includes categorized product listings, a user-friendly search feature, and a clear navigation system. Additionally, we have implemented a tiered membership system to cater to different levels of customer needs, ensuring a personalized experience. The design aims to create a professional, trustworthy platform that enhances customer satisfaction and simplifies the purchasing process for clinics and hospitals.",
     },
     {
         category: "UX/UI Design",
@@ -129,14 +129,13 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/uxui/apd/ap7.png"
         ],
         technology: "Figma",
-        description: "Designed a UI kit for e-commerce platforms to speed up design workflows.",
+        description: "UX/UI design for Apureda Thailand's website aims to provide a seamless and professional user experience for showcasing Apureda's products, including air compressors, air dryers, and more. The design features a clear and easy-to-navigate layout that highlights Apureda's extensive product range and services. Additionally, the website includes dedicated sections for Jelpc, showcasing their service offerings, and Cosbog Thailand, displaying their aluminum air pipes. The goal is to create a cohesive and efficient platform that reflects the company's commitment to quality and customer satisfaction.",
     },
     {
         category: "UX/UI Design",
         title: "Meeting Creative Website Redesign",
         images: [
             "https://elboomie.vercel.app/assets/img/webproject/meeting/mt.png",
-            "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
             "https://elboomie.vercel.app/assets/img/webproject/meeting/4.png",
@@ -145,7 +144,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/meeting/mtmu.png"
         ],
         technology: "Figma",
-        description: "Designed a UI kit for company website.",
+        description: "UX/UI design for Meeting Creative's website, developed as a cooperative education project, showcases the company's expertise in web design and development, graphic design, and network systems. The design prioritizes a professional and visually appealing layout that highlights the company's diverse range of services. Key features include a clear and intuitive navigation system, engaging visual elements, and a user-friendly interface. The goal is to create a modern and efficient platform that reflects Meeting Creative's commitment to delivering high-quality solutions for its clients.",
     },
     {
         category: "UX/UI Design",
@@ -163,7 +162,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/portfoliodesign.png"
         ],
         technology: "Figma",
-        description: "Designed a UI kit for my portfolio website.",
+        description: "UX/UI design for my portfolio website emphasizes a clean, modern, and visually appealing layout that showcases my expertise in web development, UX/UI design, graphic design, and photography. The design includes a responsive layout optimized for both desktop and mobile devices, ensuring a seamless user experience across all screen sizes.",
     },
     // Graphic Design
     {
@@ -200,7 +199,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/graphic/portmock.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
-        description: "Graphic design provides knowledge about dentistry.",
+        description: "Graphic design for a clinic dental in the garden.",
     },
     {
         category: "Graphic Design",
@@ -227,7 +226,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/graphic/valentineoring.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
-        description: "Graphic design for dental promotions.",
+        description: "Graphic design to suggest braces colors to match Valentine's Day.",
     },
     {
         category: "Graphic Design",
@@ -245,7 +244,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/graphic/adsvalentine.jpg",
         ],
         technology: "Adobe Illustrator, Adobe Photoshop",
-        description: "Graphic design for dental promotions.",
+        description: "Graphic design to promote dentistry with a Valentine's Day theme.",
     },
     // Photography
     {
