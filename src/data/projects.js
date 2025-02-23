@@ -38,7 +38,7 @@ const projects = [
         category: "Web & Application",
         title: "Ourgram",
         images: [
-            "https://elboomie.vercel.app/assets/img/webproject/ourgram/ourgram.png",
+            "https://elboomie.vercel.app/assets/img/webproject/ourgram/ourgram.jpg",
             "https://elboomie.vercel.app/assets/img/webproject/ourgram/og1.png",
             "https://elboomie.vercel.app/assets/img/webproject/ourgram/og2.png",
             "https://elboomie.vercel.app/assets/img/webproject/ourgram/og3.png",
@@ -57,9 +57,9 @@ const projects = [
         title: "Movie Recommendation",
         images: [
             "https://elboomie.vercel.app/assets/img/webproject/movierec/movierec.jpg",
-            'https://elboomie.vercel.app/assets/img/mock13.jpg',
-            'https://elboomie.vercel.app/assets/img/mock14.jpg',
-            'https://elboomie.vercel.app/assets/img/mock15.jpg'
+            'https://elboomie.vercel.app/assets/img/works/mock13.jpg',
+            'https://elboomie.vercel.app/assets/img/works/mock14.jpg',
+            'https://elboomie.vercel.app/assets/img/works/mock15.jpg'
         ],
         technology: "React Native",
         description: "This Movie Recommendation App It is an application that helps users discover popular movies and filter them by genre.",
