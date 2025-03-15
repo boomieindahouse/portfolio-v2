@@ -9,7 +9,7 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
             onClick={closeModal}
         >
             <div
-                className="bg-white rounded-xl pb-4 relative max-w-3xl w-full"
+                className="bg-white rounded-xl pb-6 relative max-w-3xl w-full max-h-screen overflow-auto md:max-h-[80vh] custom-scrollbar"
                 onClick={(e) => e.stopPropagation()}
             >
 
@@ -32,7 +32,7 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
                             <img
                                 src={img}
                                 alt={`${selectedProject.title} ${index + 1}`}
-                                className="rounded-t-lg pointer-events-none" // ✅ ป้องกัน Hover Selection
+                                className="rounded-t-sm pointer-events-none" // ✅ ป้องกัน Hover Selection
                                 draggable={false}
                             />
                         </div>
