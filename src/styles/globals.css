@@ -41,7 +41,6 @@ body {
   max-height: 500px; /* ปรับตามความสูงของเนื้อหา */
 }
 
-
 .projects {
   display: grid;
   grid-gap: 1.5rem;
@@ -59,7 +58,7 @@ body {
 }
 
 .carousel .slide {
-  user-select: none;  /* ป้องกัน Selection Overlay */
+  user-select: none; /* ป้องกัน Selection Overlay */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -69,21 +68,18 @@ body {
   z-index: 10; /* ป้องกันลูกศรหาย */
 }
 
+@media (min-width: 640px) and (max-width: 1023px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
-}
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #858585;
+    border-radius: 10px;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #858585;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #303030;
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 10px;
+  }
 }
