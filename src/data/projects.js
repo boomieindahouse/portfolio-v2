@@ -13,7 +13,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/meeting/6.png"
         ],
         technology: "NEXT.js, TailwindCSS",
-        description: "The web application for Meeting Creative is designed to showcase the company's expertise in web design and development, graphic design, and network systems. This interactive platform provides a seamless user experience with key features such as a responsive layout, intuitive navigation, and engaging visual elements. Users can explore a wide range of services, view detailed project portfolios, and connect with the team easily. The design reflects Meeting Creative's commitment to delivering high-quality solutions and creating an impressive online presence for their clients.",
+        description: "The web application for Meeting Creative is designed to showcase the company's expertise in web design and development, graphic design, and network systems. This interactive platform provides a seamless user experience with key features such as a responsive layout, intuitive navigation, and engaging visual elements. Users can explore a wide range of services, view detailed project portfolios, and connect with the team easily.",
         github: "https://github.com/boomieindahouse/meeting-redesign-th",
     },
     {
@@ -49,7 +49,7 @@ const projects = [
             "https://elboomie.vercel.app/assets/img/webproject/ourgram/og8.png"
         ],
         technology: "Altorouter PHP, Javascript, CSS, MySql",
-        description: "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts. This project demonstrates the practical application of database management principles, focusing on efficient data storage, retrieval, and user interface integration.",
+        description: "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts.",
         github: "https://github.com/boomieindahouse/ourgram",
     },
     {
@@ -62,7 +62,7 @@ const projects = [
             'https://elboomie.vercel.app/assets/img/works/mock15.jpg'
         ],
         technology: "React Native",
-        description: "The Movie Recommendation App is a project developed using React Native, originally written in Flutter for an application development course. This application helps users discover popular movies and filter them by genre. It leverages the TMDB API to provide up-to-date movie information and recommendations. Key features include user-friendly navigation, movie categorization by genre, and detailed movie information. This project demonstrates my ability to work with both Flutter and React Native, showcasing my skills in mobile application development and API integration.",
+        description: "The Movie Recommendation App is a project developed using React Native, originally written in Flutter for an application development course. This application helps users discover popular movies and filter them by genre. It leverages the TMDB API to provide up-to-date movie information and recommendations. Key features include user-friendly navigation, movie categorization by genre, and detailed movie information.",
         github: "https://github.com/boomieindahouse/MovieApp",
     },
     // UX/UI Design
