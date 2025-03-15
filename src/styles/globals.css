@@ -83,3 +83,7 @@ body {
   background: #303030;
   border-radius: 10px;
 }
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}

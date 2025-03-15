@@ -9,7 +9,8 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
             onClick={closeModal}
         >
             <div
-                className="bg-white rounded-xl pb-6 relative max-w-3xl w-full max-h-screen overflow-auto md:max-h-[80vh] custom-scrollbar"
+                className="bg-white rounded-xl pb-6 relative max-w-3xl w-full max-h-screen overflow-auto md:max-h-[90vh] custom-scrollbar"
+                style={{ WebkitOverflowScrolling: "touch" }}
                 onClick={(e) => e.stopPropagation()}
             >
 
