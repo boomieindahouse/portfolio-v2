@@ -39,8 +39,28 @@ const FullscreenLoopSection = () => {
             </section>
 
             {/* Desktop Section */}
-            <section className="absolute inset-0 w-full h-full hidden lg:block xl:bg-fixed xl:bg-center xl:bg-cover"
-                style={{ backgroundImage: `url(${getPicture(currentSection, "low")})` }}>
+            <section className="absolute inset-0 w-full h-full hidden lg:block">
+                {/* ใช้ object-cover ใน lg แต่ไม่ใช้ bg-fixed */}
+                <img
+                    src={getPicture(currentSection, "low")}
+                    alt={`Section ${currentSection}`}
+                    className="w-full h-full object-cover blur-sm transition-all duration-500 absolute inset-0 lg:block xl:hidden"
+                    onLoad={() => setLowQualityLoaded(true)}
+                />
+                {lowQualityLoaded && (
+                    <img
+                        src={getPicture(currentSection)}
+                        alt={`Section ${currentSection}`}
+                        className="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-0 lg:block xl:hidden"
+                        onLoad={(e) => e.target.classList.remove("opacity-0")}
+                    />
+                )}
+
+                {/* xl ใช้ background-image + bg-fixed */}
+                <div
+                    className="absolute inset-0 hidden xl:block xl:bg-fixed xl:bg-center xl:bg-cover"
+                    style={{ backgroundImage: `url(${getPicture(currentSection)})` }}
+                />
             </section>
         </div>
     );
