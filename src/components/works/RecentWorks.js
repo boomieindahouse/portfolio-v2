@@ -1,7 +1,6 @@
-// RecentWorks.js
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import projects from '../../data/projects';
 import ProjectModal from '../layout/ProjectModal';
 import PhotographyModal from '../layout/PhotographyModal';
@@ -40,6 +39,33 @@ export default function RecentWorks() {
         setIsModalOpen(false);
     };
 
+    // preload รูปภาพของแท็บที่กำลังจะ active
+    useEffect(() => {
+        const filteredProjects = projects.filter(p => p.category === activeTab);
+
+        filteredProjects.forEach(project => {
+            // preload รูปภาพของ project แต่ละอัน
+            if (activeTab === 'Photography') {
+                // ถ้า images เป็น array หรือ string
+                if (Array.isArray(project.images)) {
+                    project.images.forEach(src => {
+                        const img = new Image();
+                        img.src = src;
+                    });
+                } else {
+                    const img = new Image();
+                    img.src = project.images;
+                }
+            } else {
+                // preload รูปภาพแรกของแต่ละโปรเจค
+                if (project.images && project.images[0]) {
+                    const img = new Image();
+                    img.src = project.images[0];
+                }
+            }
+        });
+    }, [activeTab]);
+
     return (
         <section className="px-4 sm:px-6 xl:px-8 recent-works bg-black text-white py-12">
             <div className="container mx-auto">
@@ -74,20 +100,17 @@ export default function RecentWorks() {
                                 className="project-card text-start relative overflow-hidden group cursor-pointer"
                                 onClick={() => openModal(project)}
                             >
-                                {/* projects img */}
                                 <div className="relative overflow-hidden rounded-lg">
                                     <img
                                         src={activeTab === 'Photography' ? project.images : project.images[0]}
                                         alt={project.title}
                                         className="transform transition-transform duration-500 group-hover:scale-105"
                                     />
-                                    {/* expand */}
                                     <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
                                         Expand
                                     </div>
                                 </div>
 
-                                {/* projects title */}
                                 <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
                             </div>
                         ))}
