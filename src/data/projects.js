@@ -65,6 +65,71 @@ const projects = [
         description: "The Movie Recommendation App is a project developed using React Native, originally written in Flutter for an application development course. This application helps users discover popular movies and filter them by genre. It leverages the TMDB API to provide up-to-date movie information and recommendations. Key features include user-friendly navigation, movie categorization by genre, and detailed movie information.",
         github: "https://github.com/boomieindahouse/MovieApp",
     },
+    {
+        category: "Web & Application",
+        title: "Vongchavalitkul University",
+        images: [
+            "https://placehold.co/800x600/EEE/31343C",
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C'
+        ],
+        technology: "NextJS, TailwindCSS",
+        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+        liveDemo: "https://demo.vu.ac.th/"
+    },
+    {
+        category: "Web & Application",
+        title: "Icom X Kaspersky",
+        images: [
+            "https://placehold.co/800x600/EEE/31343C",
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C'
+        ],
+        technology: "NextJS, TailwindCSS",
+        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+        liveDemo: "https://demo.icom.co.th/"
+    },
+    {
+        category: "Web & Application",
+        title: "Apureda Thailand",
+        images: [
+            "https://placehold.co/800x600/EEE/31343C",
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C'
+        ],
+        technology: "Laravel, TailwindCSS",
+        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+        liveDemo: "https://apdthailand.com/"
+    },
+    {
+        category: "Web & Application",
+        title: "Chilema BKK",
+        images: [
+            "https://placehold.co/800x600/EEE/31343C",
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C'
+        ],
+        technology: "Laravel, TailwindCSS",
+        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+        liveDemo: "https://www.chilemabkk.com/"
+    },
+    {
+        category: "Web & Application",
+        title: "Chuaykai",
+        images: [
+            "https://placehold.co/800x600/EEE/31343C",
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C',
+            'https://placehold.co/800x600/EEE/31343C'
+        ],
+        technology: "Laravel, TailwindCSS",
+        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+        liveDemo: "https://www.chilemabkk.com/"
+    },
     // UX/UI Design
     {
         category: "UX/UI Design",

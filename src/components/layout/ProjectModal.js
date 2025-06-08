@@ -65,17 +65,33 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
 
         {selectedProject.category !== "UX/UI Design" &&
           selectedProject.category !== "Graphic Design" && (
-            <div className="mt-4 px-4">
-              <a
-                href={selectedProject.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white px-4 py-2 rounded-lg border border-transparent hover:bg-transparent hover:border-black hover:text-black transition duration-300"
-              >
-                View on Github
-              </a>
+            <div className="mt-4 px-4 flex gap-4">
+              {/* ถ้ามี github ให้แสดงปุ่ม GitHub */}
+              {selectedProject.github && (
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-4 py-2 rounded-lg border border-transparent hover:bg-transparent hover:border-black hover:text-black transition duration-300"
+                >
+                  View on Github
+                </a>
+              )}
+
+              {/* ถ้ามี liveDemo ให้แสดงปุ่ม View Live */}
+              {selectedProject.liveDemo && (
+                <a
+                  href={selectedProject.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-4 py-2 rounded-lg border border-transparent hover:bg-transparent hover:border-black hover:text-black transition duration-300"
+                >
+                  View Live
+                </a>
+              )}
             </div>
           )}
+
       </div>
     </div>
   );
