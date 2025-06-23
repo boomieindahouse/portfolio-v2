@@ -153,6 +153,20 @@ const projects = [
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://demo.thanapart.com/",
   },
+    {
+    category: "Web & Application",
+    title: "Toyota Thongruaysima",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://demo.toyotathongruay.com/",
+  },
   // UX/UI Design
   {
     category: "UX/UI Design",
