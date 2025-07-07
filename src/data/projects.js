@@ -157,7 +157,7 @@ const projects = [
     category: "Web & Application",
     title: "Toyota Thongruaysima",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
+      "https://elboomie.vercel.app/assets/img/webproject/thongruay/thongruaywork.png",
       "https://placehold.co/800x600/EEE/31343C",
       "https://placehold.co/800x600/EEE/31343C",
       "https://placehold.co/800x600/EEE/31343C",
