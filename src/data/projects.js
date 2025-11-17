@@ -81,7 +81,7 @@ const projects = [
     technology: "NextJS, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://demo.vu.ac.th/",
+    liveDemo: "https://www.vu.ac.th",
   },
   {
     category: "Web & Application",
@@ -95,7 +95,7 @@ const projects = [
     technology: "NextJS, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://demo.icom.co.th/",
+    liveDemo: "https://kaspersky.icom.co.th",
   },
   {
     category: "Web & Application",
@@ -151,9 +151,9 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://demo.thanapart.com/",
+    liveDemo: "https://thanapart.com",
   },
-    {
+  {
     category: "Web & Application",
     title: "Toyota Thongruaysima",
     images: [
@@ -165,8 +165,108 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://demo.toyotathongruay.com/",
+    liveDemo: "https://toyotathongruay.com",
   },
+  {
+    category: "Web & Application",
+    title: "Thaiteen Training (CAMRI)",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "NextJS, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://thaiteentraining.go.th",
+  },
+  {
+    category: "Web & Application",
+    title: "Ford Eaksaha Group",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://fordesg.com",
+  },
+        {
+    category: "Web & Application",
+    title: "Iyarabiotech",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://iyarabiotech.com",
+  },
+    {
+    category: "Web & Application",
+    title: "KIA THEPNAKORN",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "#",
+  },
+  {
+    category: "Web & Application",
+    title: "HYUNDAI THEPNAKORN",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "#",
+  },
+    {
+    category: "Web & Application",
+    title: "Smileair Bangkok",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://demo.smileairbangkok.com",
+  },
+      {
+    category: "Web & Application",
+    title: "Wintech Machinery",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://demo.wintechmachinery.com",
+  },
+
+
   // UX/UI Design
   {
     category: "UX/UI Design",
