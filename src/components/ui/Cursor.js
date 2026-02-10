@@ -1,45 +1,51 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import './cursor.css'; // นำเข้า CSS ที่สร้างไว้
+import React, { useEffect } from "react";
+import "./cursor.css"; // นำเข้า CSS ที่สร้างไว้
 
 const Cursor = () => {
   useEffect(() => {
-    const cursor = document.querySelector('.cursor');
+    const cursor = document.querySelector(".cursor");
 
-    // ฟังก์ชันติดตามตำแหน่งเมาส์
+    // Function to track mouse position using transform for performance
     const handleMouseMove = (e) => {
-      cursor.style.top = `${e.clientY}px`;
-      cursor.style.left = `${e.clientX}px`;
+      if (cursor) {
+        cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+      }
     };
 
-    // ฟังก์ชันเพิ่ม effect เมื่อ hover
-    const handleMouseEnter = () => {
-      cursor.classList.add('cursor-hover');
+    // Function to add hover effect
+    const handleMouseEnter = (e) => {
+      if (e.target.closest("a, button")) {
+        cursor?.classList.add("cursor-hover");
+      }
     };
 
-    // ฟังก์ชันลบ effect เมื่อออกจาก hover
-    const handleMouseLeave = () => {
-      cursor.classList.remove('cursor-hover');
+    // Function to remove hover effect
+    const handleMouseLeave = (e) => {
+      if (e.target.closest("a, button")) {
+        cursor?.classList.remove("cursor-hover");
+      }
     };
 
-    // Event listeners สำหรับ mousemove และ hover
-    window.addEventListener('mousemove', handleMouseMove);
-    document.querySelectorAll('a, button').forEach((el) => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
-    });
+    // Use event delegation for better performance and dynamic elements
+    window.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseover", handleMouseEnter);
+    document.addEventListener("mouseout", handleMouseLeave);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      document.querySelectorAll('a, button').forEach((el) => {
-        el.removeEventListener('mouseenter', handleMouseEnter);
-        el.removeEventListener('mouseleave', handleMouseLeave);
-      });
+      window.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseover", handleMouseEnter);
+      document.removeEventListener("mouseout", handleMouseLeave);
     };
   }, []);
 
-  return <div className="cursor"></div>;
+  return (
+    <div
+      className="cursor"
+      style={{ top: 0, left: 0, position: "fixed", pointerEvents: "none" }}
+    ></div>
+  );
 };
 
 export default Cursor;

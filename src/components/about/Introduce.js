@@ -24,7 +24,7 @@ const Introduce = () => {
                         I enrolled at Rajamangala University of Technology Isan, majoring in Computer Engineering.
                     </p>
                     <p className="text-lg leading-relaxed">
-                        I&apos;m interested in Front-end Development and UX/UI design. Whenever I have free time, I often practice coding to enhance my skills.
+                        I&apos;m interested in Full-Stack Development and UX/UI design. Whenever I have free time, I often practice coding to enhance my skills.
                         <br />
                         <br />
                         In my spare time, I love to explore new technologies and practice coding to sharpen my skills. When I&apos;m not coding, I enjoy playing games and reading design blogs to get inspired.

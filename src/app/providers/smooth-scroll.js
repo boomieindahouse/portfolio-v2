@@ -4,7 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import { usePathname } from "next/navigation";
 
 export default function SmoothScroll({ children }) {
-  const pathname = usePathname(); // ใช้ usePathname แทน useRouter
+  const pathname = usePathname();
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -13,20 +13,23 @@ export default function SmoothScroll({ children }) {
       smoothTouch: false,
     });
 
+    let reqId;
+
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      reqId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    reqId = requestAnimationFrame(raf);
 
-    // เลื่อนไปบนสุดเมื่อ path เปลี่ยน
+    // Scroll to top when path changes
     lenis.scrollTo(0, { immediate: true });
 
     return () => {
+      cancelAnimationFrame(reqId);
       lenis.destroy();
     };
-  }, [pathname]); // เพิ่ม pathname เป็น dependency
+  }, [pathname]);
 
   return <>{children}</>;
 }

@@ -24,7 +24,7 @@ const SkillsSection = () => {
                         Skills and Expertise
                     </h2>
                     <p className="text-lg xl:text-xl mb-8 leading-relaxed">
-                        As a versatile Front-end Developer, UX/UI Designer, and Graphic Designer, I have honed a diverse set of skills that enable me to create engaging and user-friendly digital experiences. My expertise spans a wide range of tools and technologies, ensuring that I can deliver high-quality solutions tailored to each unique project.
+                        As a versatile Full-Stack Developer, UX/UI Designer, and Graphic Designer, I have honed a diverse set of skills that enable me to create engaging and user-friendly digital experiences. My expertise spans a wide range of tools and technologies, ensuring that I can deliver high-quality solutions tailored to each unique project.
                     </p>
                 </div>
 
