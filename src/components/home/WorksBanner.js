@@ -11,7 +11,7 @@ const FullscreenLoopSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSection((prev) => (prev === totalPictures ? 1 : prev + 1));
-    }, 4000); // 4 seconds total loop time
+    }, 2000); // 4 seconds total loop time
 
     return () => clearInterval(interval);
   }, [totalPictures]);
