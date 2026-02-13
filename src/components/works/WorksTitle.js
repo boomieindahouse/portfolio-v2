@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="container mx-auto">
                 <div className='h-[400px] xl:h-full'>
                     <h1 className="text-[40pt] md:text-7xl lg:text-[66pt] xl:text-[80pt] font-semibold text-white leading-[55px] xl:leading-tight text-left md:text-left mt-16 xl:mt-10">
-                        Discover my creative passion and dedication to excellence.
+                        Discover my <span className="text-orange-500">creative passion</span> and dedication to excellence.
                         {/* <br />
                         {isMobile ? 'Boomies' : 'Prapananyosanan'} */}
                     </h1>

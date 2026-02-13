@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="container mx-auto">
                 <div className='h-[200px] xl:h-[300px]'>
                     <h1 className="text-[40pt] md:text-7xl lg:text-[66pt] xl:text-[100pt] font-semibold text-white leading-[55px] xl:leading-tight text-left md:text-left mt-16 xl:mt-10">
-                        Pawitsanat
+                        <span className="text-orange-500">Pawitsanat</span>
                         <br />
                         {isMobile ? 'Boomies' : 'Prapananyosanan'}
                     </h1>

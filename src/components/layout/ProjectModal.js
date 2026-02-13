@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { useEffect, useRef } from "react";
+import GLightbox from "glightbox";
+import "glightbox/dist/css/glightbox.min.css";
+import { Icon } from "@iconify/react";
 
 const ProjectModal = ({ selectedProject, closeModal }) => {
+  const lightboxRef = useRef(null);
+
   // Lock body scroll
   useEffect(() => {
     const original = document.body.style.overflow;
@@ -10,111 +13,156 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
     return () => (document.body.style.overflow = original);
   }, []);
 
+  // Initialize GLightbox
+  useEffect(() => {
+    if (!selectedProject) return;
+
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+      selector: ".glightbox", // Use a class selector
+    });
+
+    lightboxRef.current = lightbox;
+
+    return () => {
+      lightbox.destroy();
+    };
+  }, [selectedProject]);
+
+  if (!selectedProject) return null;
+
+  const images = Array.isArray(selectedProject.images)
+    ? selectedProject.images
+    : [selectedProject.images];
+  const coverImage = images[0];
+  const otherImages = images.slice(1);
+
   return (
     <div
-      className="
-        fixed inset-0 z-50 px-4 flex items-center justify-center
-        bg-black/60 backdrop-blur-sm
-        animate-fadeIn
-      "
+      className="fixed inset-0 z-50 px-4 flex items-center justify-center bg-black/80 backdrop-blur-sm animate-fadeIn"
       onClick={(e) => {
         if (e.target === e.currentTarget) closeModal();
       }}
     >
       <div
-        className="
-          w-full max-w-3xl bg-white rounded-2xl shadow-xl 
-          overflow-hidden max-h-[90vh] flex flex-col
-          animate-scaleIn relative
-        "
+        className="w-full max-w-6xl bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col md:flex-row animate-scaleIn relative border border-zinc-800"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b border-zinc-200">
-          <h2 className="text-xl font-semibold text-zinc-800">
-            {selectedProject.title}
-          </h2>
+        {/* Close Button Mobile */}
+        <button
+          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white hover:bg-black/70 md:hidden transition"
+          onClick={closeModal}
+        >
+          <Icon icon="carbon:close" width="24" />
+        </button>
 
-          <button
-            className="
-              w-9 h-9 flex items-center justify-center rounded-full 
-              bg-zinc-300 hover:bg-zinc-200 transition
-            "
-            onClick={closeModal}
+        {/* Image Section (Left/Top) */}
+        <div className="w-full md:w-3/5 h-[300px] md:h-auto relative bg-zinc-900 group">
+          {/* Main Cover Link */}
+          <a
+            href={coverImage}
+            className="glightbox w-full h-full block relative"
+            data-gallery="project-gallery"
           >
-            ✕
-          </button>
+            <img
+              src={coverImage}
+              alt={selectedProject.title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+            />
+
+            {/* Overlay with instructions */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105">
+              <span className="bg-white/20 backdrop-blur-md px-6 py-2 rounded-full text-white font-normal flex items-center gap-2 border border-white/30">
+                <Icon icon="bi:zoom-in" /> View Gallery ({images.length})
+              </span>
+            </div>
+          </a>
+
+          {/* Hidden links for other images to be included in the gallery */}
+          {otherImages.map((img, idx) => (
+            <a
+              key={idx}
+              href={img}
+              className="glightbox hidden"
+              data-gallery="project-gallery"
+            />
+          ))}
         </div>
 
-        {/* Carousel */}
-        <div className="w-full">
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            infiniteLoop
-            swipeable
-            emulateTouch
-            interval={3500}
-          >
-            {selectedProject.images.map((img, i) => (
-              <div key={i} className="backdrop-blur-md bg-white/5">
-                <img
-                  src={img}
-                  className="w-full max-h-[400px] object-contain"
-                  draggable={false}
-                />
+        {/* Content Section (Right/Bottom) */}
+        <div className="w-full md:w-2/5 p-8 overflow-y-auto custom-scrollbar bg-[#111] text-zinc-300 flex flex-col">
+          {/* Header */}
+          <div className="flex justify-between items-start mb-6">
+            <div>
+              <span className="inline-block px-3 py-1 mb-3 text-xs font-normal tracking-wider text-orange-500 uppercase bg-orange-500/10 rounded-full border border-orange-500/20">
+                {selectedProject.category}
+              </span>
+              <h2 className="text-3xl font-bold text-white leading-tight">
+                {selectedProject.title}
+              </h2>
+            </div>
+
+            {/* Close Button Desktop */}
+            <button
+              className="hidden md:flex w-10 h-10 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition shrink-0 ml-4"
+              onClick={closeModal}
+            >
+              <Icon icon="carbon:close" width="24" />
+            </button>
+          </div>
+
+          {/* Details */}
+          <div className="space-y-6 flex-1">
+            <div>
+              <h3 className="text-sm font-normal text-zinc-500 uppercase tracking-wide mb-2">
+                Technologies
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.technology.split(",").map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 text-sm bg-zinc-800 border border-zinc-700 rounded-md text-zinc-300"
+                  >
+                    {tech.trim()}
+                  </span>
+                ))}
               </div>
-            ))}
-          </Carousel>
-        </div>
+            </div>
 
-        {/* Content Scrollable */}
-        <div className="p-6 overflow-y-auto custom-scrollbar">
-          {/* Info */}
-          <div className="space-y-3 text-zinc-700">
-            <p>
-              <span className="font-semibold">Category:</span>{" "}
-              {selectedProject.category}
-            </p>
-
-            <p>
-              <span className="font-semibold">Technology:</span>{" "}
-              {selectedProject.technology}
-            </p>
-
-            <p>
-              <span className="font-semibold">Description:</span>{" "}
-              {selectedProject.description}
-            </p>
+            <div>
+              <h3 className="text-sm font-normal text-zinc-500 uppercase tracking-wide mb-2">
+                About Project
+              </h3>
+              <p className="text-zinc-400 leading-relaxed font-light">
+                {selectedProject.description}
+              </p>
+            </div>
           </div>
 
           {/* Actions */}
           {(selectedProject.github || selectedProject.liveDemo) && (
-            <div className="mt-6 flex gap-4">
-              {selectedProject.github && (
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="
-                    px-4 py-2 rounded-lg border border-zinc-300 
-                    bg-zinc-800 text-white hover:bg-zinc-900 transition
-                  "
-                >
-                  GitHub
-                </a>
-              )}
-
+            <div className="mt-10 pt-6 border-t border-zinc-800 flex flex-col sm:flex-row gap-4">
               {selectedProject.liveDemo && (
                 <a
                   href={selectedProject.liveDemo}
                   target="_blank"
                   rel="noreferrer"
-                  className="
-                    bg-black text-white px-4 py-2 rounded-lg border border-transparent hover:bg-transparent hover:border-black hover:text-black transition duration-500
-                  "
+                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-normal transition-all shadow-lg hover:shadow-orange-600/20"
                 >
-                  Live Demo
+                  <Icon icon="akar-icons:link-chain" /> Go to website
+                </a>
+              )}
+
+              {selectedProject.github && (
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-normal transition-all border border-zinc-700"
+                >
+                  <Icon icon="akar-icons:github-fill" /> Github
                 </a>
               )}
             </div>

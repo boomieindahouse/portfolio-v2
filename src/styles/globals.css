@@ -44,7 +44,9 @@ body {
 .projects {
   display: grid;
   grid-gap: 1.5rem;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .projects.fade-in {
@@ -82,4 +84,9 @@ body {
     background: #303030;
     border-radius: 10px;
   }
+}
+
+/* GLightbox Customization */
+.glightbox-container .goverlay {
+  background: rgba(0, 0, 0, 0.2) !important;
 }

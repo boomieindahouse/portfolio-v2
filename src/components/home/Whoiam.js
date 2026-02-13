@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import projects from "../../data/projects";
 
 import Image from "next/image";
 
@@ -52,16 +53,19 @@ const AboutSection = () => {
             </div>
             <div className="mb-5 xl:mb-10">
               <p className="text-lg mb-6 mt-4">
-                Hello my name is Boomie. I&apos;m a {age}-year-old creative and
-                passionate Full-Stack Developer, UX/UI Designer, and Graphic
-                Designer. I specialize in crafting intuitive and visually
-                stunning digital experiences.
+                Hello my name is Boomie. I&apos;m a {age}-year-old
+                <br /> I started with a simple question: How can complex things
+                feel simple?
               </p>
               <p className="text-lg">
-                Besides my work in design and development, I also have a deep
-                love for photography. I believe in capturing the beauty of the
-                world through my lens, which adds an extra layer of creativity
-                and inspiration to my projects.
+                My background traverses Graphic Design, Photography, and
+                Software Engineering. This hybrid perspective allows me to build
+                tools that are not only robust under the hood but intuitive on
+                the surface.
+                <br />
+                <br />I don’t just “hand off” designs to developers — I build
+                them. I ensure the animation curves match the feeling of the
+                brand, and the API response times match the speed of thought.
               </p>
             </div>
           </div>
@@ -122,6 +126,33 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-12">
+          {projects.slice(0, 4).map((project, index) => {
+            const imageSrc = Array.isArray(project.images)
+              ? project.images[0]
+              : project.images;
+            return (
+              <Link
+                href="/works#recent-works"
+                key={index}
+                className={`relative block ${index % 2 !== 0 ? "sm:mt-16 lg:mt-24" : ""}`}
+              >
+                <div className="bg-primary w-full aspect-[4/3] rounded-lg overflow-hidden group border border-gray-800">
+                  <img
+                    src={imageSrc}
+                    alt={project.title}
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <h3 className="mt-4 text-lg lg:text-xl font-medium">
+                  {project.title}
+                </h3>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
