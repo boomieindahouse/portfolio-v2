@@ -73,9 +73,17 @@ const projects = [
     category: "Web & Application",
     title: "Vongchavalitkul University",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "https://elboomie.vercel.app/assets/img/vu.png",
+    ],
+    technology: "NextJS, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://www.vu.ac.th",
+  },
+  {
+    category: "Web & Application",
+    title: "Thaiteentraining",
+    images: [
       "https://placehold.co/800x600/EEE/31343C",
     ],
     technology: "NextJS, TailwindCSS",
@@ -264,6 +272,17 @@ const projects = [
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://demo.wintechmachinery.com",
+  },
+  {
+    category: "Web & Application",
+    title: "LEAPMOTOR",
+    images: [
+      "https://placehold.co/800x600/EEE/31343C",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+    liveDemo: "https://demo.leapmotor.co.th",
   },
 
 
