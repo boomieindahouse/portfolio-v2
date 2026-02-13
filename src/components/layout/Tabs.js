@@ -8,7 +8,7 @@ const Tabs = ({ tabs, activeTab, changeTab, dropdownOpen, setDropdownOpen }) => 
       <div className="block lg:hidden relative">
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="w-full px-4 py-2 rounded-full border border-white bg-black text-white font-medium flex items-center justify-between"
+          className="w-full px-4 py-2 rounded-full border border-white bg-black text-white font-normal flex items-center justify-between"
         >
           {activeTab}
           <svg
@@ -52,7 +52,7 @@ const Tabs = ({ tabs, activeTab, changeTab, dropdownOpen, setDropdownOpen }) => 
           <button
             key={index}
             onClick={() => changeTab(tab)}
-            className={`tab px-6 py-2 rounded-full font-medium transition ${activeTab === tab ? 'bg-white text-black' : 'border border-white text-white'}`}
+            className={`tab px-6 py-2 rounded-full font-normal transition ${activeTab === tab ? 'bg-white text-black' : 'border border-white text-white'}`}
           >
             {tab}
           </button>

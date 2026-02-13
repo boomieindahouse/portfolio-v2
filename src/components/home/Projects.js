@@ -52,7 +52,7 @@ const PortfolioSection = () => {
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="mt-4 text-lg lg:text-xl font-medium">
+              <h3 className="mt-4 text-lg lg:text-xl font-normal">
                 {project.title}
               </h3>
             </Link>

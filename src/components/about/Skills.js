@@ -77,7 +77,7 @@ const SkillsSection = () => {
                                         className="w-12 h-12 mx-auto"
                                     />
                                     <div className="absolute inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 hover:rounded-lg transition duration-300">
-                                        <p className="mb-2 text-lg font-medium">{item.name}</p>
+                                        <p className="mb-2 text-lg font-normal">{item.name}</p>
                                         {item.proficiency && (
                                             <div className="w-10/12 h-2 bg-gray-300 rounded">
                                                 <div
