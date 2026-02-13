@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Icon } from "@iconify/react";
 import projects from "../../data/projects";
 import ProjectModal from "../layout/ProjectModal";
 import PhotographyModal from "../layout/PhotographyModal";
@@ -16,11 +17,14 @@ const tabs = [
 export default function RecentWorks() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [fadeClass, setFadeClass] = useState("fade-in");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = activeTab === "Photography" ? 10 : 9;
 
   const changeTab = (tab) => {
     setFadeClass("fade-out");
     setTimeout(() => {
       setActiveTab(tab);
+      setCurrentPage(1); // Reset to page 1
       setFadeClass("fade-in");
     }, 500);
   };
@@ -44,14 +48,34 @@ export default function RecentWorks() {
     setIsModalOpen(false);
   };
 
-  // preload รูปภาพของแท็บที่กำลังจะ active
-  useEffect(() => {
-    const filteredProjects = projects.filter((p) => p.category === activeTab);
+  // Filter and Pagination Logic
+  const filteredProjects = projects.filter(
+    (project) => project.category === activeTab,
+  );
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentProjects = filteredProjects.slice(
+    indexOfFirstItem,
+    indexOfLastItem,
+  );
+  const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
 
+  const paginate = (pageNumber) => {
+    setFadeClass("fade-out");
+    setTimeout(() => {
+      setCurrentPage(pageNumber);
+      setFadeClass("fade-in");
+      // Optional: Scroll to top of section
+      const section = document.getElementById("recent-works");
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+
+  // Preload images for the current active tab
+  useEffect(() => {
+    // Preload for all filtered projects (could limit to current page if memory is a concern, but preloading all is safer for experience)
     filteredProjects.forEach((project) => {
-      // preload รูปภาพของ project แต่ละอัน
       if (activeTab === "Photography") {
-        // ถ้า images เป็น array หรือ string
         if (Array.isArray(project.images)) {
           project.images.forEach((src) => {
             const img = new Image();
@@ -62,14 +86,13 @@ export default function RecentWorks() {
           img.src = project.images;
         }
       } else {
-        // preload รูปภาพแรกของแต่ละโปรเจค
         if (project.images && project.images[0]) {
           const img = new Image();
           img.src = project.images[0];
         }
       }
     });
-  }, [activeTab]);
+  }, [activeTab, filteredProjects]);
 
   return (
     <section
@@ -94,7 +117,7 @@ export default function RecentWorks() {
           setDropdownOpen={setDropdownOpen}
         />
 
-        {/* Projects */}
+        {/* Projects Grid */}
         <div
           className={`projects grid gap-6 ${fadeClass} ${
             activeTab === "Photography"
@@ -102,33 +125,66 @@ export default function RecentWorks() {
               : "grid-cols-1 md:grid-cols-3"
           }`}
         >
-          {projects
-            .filter((project) => project.category === activeTab)
-            .map((project, index) => (
-              <div
-                key={index}
-                className="project-card text-start relative overflow-hidden group cursor-pointer"
-                onClick={() => openModal(project)}
-              >
-                <div className="relative overflow-hidden rounded-lg">
-                  <img
-                    src={
-                      activeTab === "Photography"
-                        ? project.images
-                        : project.images[0]
-                    }
-                    alt={project.title}
-                    className="transform transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
-                    Expand
-                  </div>
+          {currentProjects.map((project, index) => (
+            <div
+              key={index}
+              className="project-card text-start relative overflow-hidden group cursor-pointer"
+              onClick={() => openModal(project)}
+            >
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src={
+                    activeTab === "Photography"
+                      ? project.images
+                      : project.images[0]
+                  }
+                  alt={project.title}
+                  className="transform transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
+                  Expand
                 </div>
-
-                <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
               </div>
-            ))}
+
+              <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
+            </div>
+          ))}
         </div>
+
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center mt-12 gap-2">
+            <button
+              onClick={() => paginate(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="px-4 py-2.5 border border-zinc-700 hover:bg-zinc-800 disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-white text-sm uppercase tracking-wider rounded-xl"
+            >
+              Prev
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i + 1}
+                onClick={() => paginate(i + 1)}
+                className={`w-10 h-10 flex items-center justify-center text-sm transition-colors ${
+                  currentPage === i + 1
+                    ? "text-[#f97316] font-bold rounded-xl border"
+                    : "border border-zinc-700 hover:bg-zinc-800 text-zinc-400 rounded-xl"
+                }`}
+              >
+                {i + 1}
+              </button>
+            ))}
+
+            <button
+              onClick={() => paginate(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2.5 border border-zinc-700 hover:bg-zinc-800 disabled:opacity-30 disabled:hover:bg-transparent transition-colors text-white text-sm uppercase tracking-wider rounded-xl"
+            >
+              Next
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Modal for Projects */}

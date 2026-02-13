@@ -129,7 +129,7 @@ const AboutSection = () => {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-12">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-12">
           {projects.slice(0, 4).map((project, index) => {
             const imageSrc = Array.isArray(project.images)
               ? project.images[0]
@@ -153,7 +153,7 @@ const AboutSection = () => {
               </Link>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );

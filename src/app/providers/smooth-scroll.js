@@ -22,8 +22,16 @@ export default function SmoothScroll({ children }) {
 
     reqId = requestAnimationFrame(raf);
 
-    // Scroll to top when path changes
-    lenis.scrollTo(0, { immediate: true });
+    if (window.location.hash) {
+      setTimeout(() => {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          lenis.scrollTo(target, { offset: 0 });
+        }
+      }, 100); // Increased timeout slightly to ensure render
+    } else {
+      lenis.scrollTo(0, { immediate: true });
+    }
 
     return () => {
       cancelAnimationFrame(reqId);
