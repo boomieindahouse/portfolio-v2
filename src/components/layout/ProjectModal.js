@@ -69,7 +69,8 @@ const ProjectModal = ({ selectedProject, closeModal }) => {
             <img
               src={coverImage}
               alt={selectedProject.title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+              className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100 ${coverImage.includes("no-image.png") ? "bg-zinc-800" : ""
+                }`}
             />
 
             {/* Overlay with instructions */}

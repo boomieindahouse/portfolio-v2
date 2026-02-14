@@ -83,7 +83,7 @@ const projects = [
     category: "Web & Application",
     title: "Thaiteen Training (CAMRI)",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
     ],
     technology: "NextJS, TailwindCSS",
     description:
@@ -94,10 +94,10 @@ const projects = [
     category: "Web & Application",
     title: "Icom X Kaspersky",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "NextJS, TailwindCSS",
     description:
@@ -108,10 +108,10 @@ const projects = [
     category: "Web & Application",
     title: "Apureda Thailand",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -122,10 +122,10 @@ const projects = [
     category: "Web & Application",
     title: "Chilema BKK",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -136,10 +136,10 @@ const projects = [
     category: "Web & Application",
     title: "Chuaykai",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -149,10 +149,10 @@ const projects = [
     category: "Web & Application",
     title: "Thana Part Service",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -164,9 +164,9 @@ const projects = [
     title: "Toyota Thongruaysima",
     images: [
       "https://elboomie.vercel.app/assets/img/webproject/thongruay/thongruaywork.png",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -177,38 +177,38 @@ const projects = [
     category: "Web & Application",
     title: "Ford Eaksaha Group",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://fordesg.com",
   },
-        {
+  {
     category: "Web & Application",
     title: "Iyarabiotech",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://iyarabiotech.com",
   },
-    {
+  {
     category: "Web & Application",
     title: "KIA THEPNAKORN",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -219,38 +219,38 @@ const projects = [
     category: "Web & Application",
     title: "HYUNDAI THEPNAKORN",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://hyundaikorat.com/",
   },
-    {
+  {
     category: "Web & Application",
     title: "Smileair Bangkok",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://demo.smileairbangkok.com",
   },
-      {
+  {
     category: "Web & Application",
     title: "Wintech Machinery",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:
@@ -261,7 +261,7 @@ const projects = [
     category: "Web & Application",
     title: "LEAPMOTOR",
     images: [
-      "https://placehold.co/800x600/EEE/31343C",
+      "/assets/img/no-image.png",
     ],
     technology: "Laravel, TailwindCSS",
     description:

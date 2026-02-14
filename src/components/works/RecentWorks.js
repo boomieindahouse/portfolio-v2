@@ -119,36 +119,41 @@ export default function RecentWorks() {
 
         {/* Projects Grid */}
         <div
-          className={`projects grid gap-6 ${fadeClass} ${
-            activeTab === "Photography"
+          className={`projects grid gap-6 ${fadeClass} ${activeTab === "Photography"
               ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
               : "grid-cols-1 md:grid-cols-3"
-          }`}
+            }`}
         >
-          {currentProjects.map((project, index) => (
-            <div
-              key={index}
-              className="project-card text-start relative overflow-hidden group cursor-pointer"
-              onClick={() => openModal(project)}
-            >
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src={
-                    activeTab === "Photography"
-                      ? project.images
-                      : project.images[0]
-                  }
-                  alt={project.title}
-                  className="transform transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
-                  Expand
-                </div>
-              </div>
+          {currentProjects.map((project, index) => {
+            const imageSrc =
+              activeTab === "Photography"
+                ? project.images
+                : project.images[0];
+            const isNoImage =
+              typeof imageSrc === "string" && imageSrc.includes("no-image.png");
 
-              <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
-            </div>
-          ))}
+            return (
+              <div
+                key={index}
+                className="project-card text-start relative overflow-hidden group cursor-pointer"
+                onClick={() => openModal(project)}
+              >
+                <div className="relative overflow-hidden rounded-lg">
+                  <img
+                    src={imageSrc}
+                    alt={project.title}
+                    className={`transform transition-transform duration-500 group-hover:scale-105 ${isNoImage ? "bg-zinc-800" : ""
+                      }`}
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
+                    Expand
+                  </div>
+                </div>
+
+                <h3 className="text-lg font-semibold mt-4">{project.title}</h3>
+              </div>
+            );
+          })}
         </div>
 
         {/* Pagination Controls */}
@@ -166,11 +171,10 @@ export default function RecentWorks() {
               <button
                 key={i + 1}
                 onClick={() => paginate(i + 1)}
-                className={`w-10 h-10 flex items-center justify-center text-sm transition-colors ${
-                  currentPage === i + 1
+                className={`w-10 h-10 flex items-center justify-center text-sm transition-colors ${currentPage === i + 1
                     ? "text-[#f97316] font-bold rounded-xl border"
                     : "border border-zinc-700 hover:bg-zinc-800 text-zinc-400 rounded-xl"
-                }`}
+                  }`}
               >
                 {i + 1}
               </button>

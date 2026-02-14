@@ -11,7 +11,10 @@ const PhotographyModal = ({ selectedPhoto, closeModal }) => {
                 <img
                     src={selectedPhoto}
                     alt="Expanded view"
-                    className="max-w-full max-h-screen object-contain"
+                    className={`max-w-full max-h-screen object-contain ${selectedPhoto && selectedPhoto.includes("no-image.png")
+                            ? "bg-zinc-800"
+                            : ""
+                        }`}
                 />
                 <button
                     className="absolute top-4 right-4 bg-white text-black hover:bg-transparent hover:text-white hover:border hover:duration-500 px-3 py-1 rounded-full"

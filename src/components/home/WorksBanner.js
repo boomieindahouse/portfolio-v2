@@ -17,9 +17,9 @@ const FullscreenLoopSection = () => {
   }, [totalPictures]);
 
   return (
-    <div className="relative w-full h-[900px] lg:h-[600px] xl:h-[920px] overflow-hidden bg-black">
+    <div className="relative w-full h-[900px] lg:h-[600px] xl:h-[920px] overflow-hidden">
       {/* Current Image */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="fixed inset-0 w-full h-full -z-10">
         <Image
           src={getPicture(currentSection)}
           alt={`Work Showcase ${currentSection}`}
