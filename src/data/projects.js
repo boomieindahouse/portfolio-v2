@@ -76,7 +76,7 @@ const projects = [
     ],
     technology: "NextJS, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official website for Vongchavalitkul University, serving as a central hub for academic news, curriculum details, and student services. Designed to be modern and accessible, ensuring students and visitors can easily navigate information across any device.",
     liveDemo: "https://www.vu.ac.th",
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     ],
     technology: "NextJS, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official training platform for the Child and Adolescent Mental Health Rajanagarindra Institute (CAMRI). This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
     liveDemo: "https://thaiteentraining.go.th",
   },
   {
@@ -101,7 +101,7 @@ const projects = [
     ],
     technology: "NextJS, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "A collaborative digital platform between Icom Tech and Kaspersky, designed to showcase cybersecurity solutions and streamline product information for the Thai market. Built with NextJS for optimal performance and SEO.",
     liveDemo: "https://kaspersky.icom.co.th",
   },
   {
@@ -115,7 +115,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official corporate website for Apureda Thailand, designed to enhance their digital presence and showcase business services. Built on the robust Laravel framework for security and scalability, with TailwindCSS for a polished, responsive user interface.",
     liveDemo: "https://apdthailand.com/",
   },
   {
@@ -129,7 +129,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official website for Chilema BKK, serving as a central hub for academic news, curriculum details, and student services. Designed to be modern and accessible, ensuring students and visitors can easily navigate information across any device.",
     liveDemo: "https://www.chilemabkk.com/",
   },
   {
@@ -143,7 +143,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "A specialized platform for the second-hand car market, designed to assist users in selling and browsing vehicles efficiently. Built with Laravel to manage complex inventory data and TailwindCSS for a responsive, trustworthy user interface.",
   },
   {
     category: "Web & Application",
@@ -156,7 +156,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official website for Thana Part Service, designed to showcase their extensive range of spare parts and services. Built on Laravel to handle complex product catalogs effectively, with a TailwindCSS interface that ensures a professional and user-friendly experience.",
     liveDemo: "https://thanapart.com",
   },
   {
@@ -170,7 +170,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official digital showroom for Toyota Thongruaysima. Designed to facilitate the customer journey by offering online test drive bookings, service appointments, and real-time promotion updates. Powered by Laravel for robust content management and TailwindCSS for a premium, responsive interface.",
     liveDemo: "https://toyotathongruay.com",
   },
   {
@@ -184,7 +184,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official digital platform for Ford Eaksaha Group, a leading Ford dealership. Designed to enhance the customer experience by providing detailed vehicle information, online service booking, and the latest promotions. Built with Laravel for secure data management and TailwindCSS for a responsive, modern interface.",
     liveDemo: "https://fordesg.com",
   },
   {
@@ -198,7 +198,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official corporate website for Iyarabiotech, designed to establish a strong digital presence for their biotechnology innovations and products. Built on Laravel to ensure a secure and scalable backend, with a clean TailwindCSS design that reflects professionalism and trust.",
     liveDemo: "https://iyarabiotech.com",
   },
   {
@@ -212,7 +212,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official digital showroom for KIA Thepnakorn, the premier KIA dealership in Nakhon Ratchasima. Designed to showcase the latest vehicle models, current promotions, and facilitate online service bookings. Built with Laravel for robust management and TailwindCSS for a sleek, modern design.",
     liveDemo: "https://www.kiakorat.com/",
   },
   {
@@ -226,7 +226,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official digital platform for Hyundai Thepnakorn, the authorized Hyundai dealer in Nakhon Ratchasima. The website features a complete virtual showroom, online service scheduling, and test drive booking. Built with Laravel for secure data handling and TailwindCSS for a premium user experience.",
     liveDemo: "https://hyundaikorat.com/",
   },
   {
@@ -240,7 +240,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "A comprehensive service platform for Smileair Bangkok, designed to streamline appointment bookings for air conditioning maintenance and installation. Built with Laravel to manage scheduling logic and TailwindCSS for a clean, easy-to-navigate user interface.",
     liveDemo: "https://demo.smileairbangkok.com",
   },
   {
@@ -254,7 +254,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official corporate website for Wintech Machinery, designed to showcase their industrial equipment and engineering solutions. Built on Laravel to manage extensive product catalogs securely, with a professional TailwindCSS interface tailored for B2B clients.",
     liveDemo: "https://wintechmachinery.com",
   },
   {
@@ -265,7 +265,7 @@ const projects = [
     ],
     technology: "Laravel, TailwindCSS",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
+      "The official digital platform for Leapmotor, the authorized Leapmotor dealer in Nakhon Ratchasima. designed to introduce their innovative electric vehicles to the market. Features a sleek, futuristic interface built with TailwindCSS to reflect the brand's technology, supported by a robust Laravel backend for seamless performance.",
     liveDemo: "https://demo.leapmotor.co.th",
   },
 

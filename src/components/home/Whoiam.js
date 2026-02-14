@@ -73,9 +73,10 @@ const AboutSection = () => {
           {/* รูปโปรไฟล์ */}
           <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 xl:mb-10 relative group overflow-hidden">
             <Image
-              src="https://elboomie.vercel.app/assets/img/profilepic.png"
+              src="/assets/img/boomprofile.jpg"
               alt="Profile"
               fill
+              quality={100}
               className="object-cover shadow-xl transition-transform transform group-hover:scale-110 group-hover:opacity-50 hover:duration-700"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />

@@ -24,7 +24,7 @@ export default function RecentWorks() {
     setFadeClass("fade-out");
     setTimeout(() => {
       setActiveTab(tab);
-      setCurrentPage(1); // Reset to page 1
+      setCurrentPage(1);
       setFadeClass("fade-in");
     }, 500);
   };
@@ -48,7 +48,6 @@ export default function RecentWorks() {
     setIsModalOpen(false);
   };
 
-  // Filter and Pagination Logic
   const filteredProjects = projects.filter(
     (project) => project.category === activeTab,
   );
@@ -65,15 +64,12 @@ export default function RecentWorks() {
     setTimeout(() => {
       setCurrentPage(pageNumber);
       setFadeClass("fade-in");
-      // Optional: Scroll to top of section
       const section = document.getElementById("recent-works");
       if (section) section.scrollIntoView({ behavior: "smooth" });
     }, 300);
   };
 
-  // Preload images for the current active tab
   useEffect(() => {
-    // Preload for all filtered projects (could limit to current page if memory is a concern, but preloading all is safer for experience)
     filteredProjects.forEach((project) => {
       if (activeTab === "Photography") {
         if (Array.isArray(project.images)) {
@@ -120,8 +116,8 @@ export default function RecentWorks() {
         {/* Projects Grid */}
         <div
           className={`projects grid gap-6 ${fadeClass} ${activeTab === "Photography"
-              ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
-              : "grid-cols-1 md:grid-cols-3"
+            ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+            : "grid-cols-1 md:grid-cols-3"
             }`}
         >
           {currentProjects.map((project, index) => {
@@ -138,11 +134,11 @@ export default function RecentWorks() {
                 className="project-card text-start relative overflow-hidden group cursor-pointer"
                 onClick={() => openModal(project)}
               >
-                <div className="relative overflow-hidden rounded-lg">
+                <div className="relative overflow-hidden rounded-lg aspect-[6/4] w-full">
                   <img
                     src={imageSrc}
                     alt={project.title}
-                    className={`transform transition-transform duration-500 group-hover:scale-105 ${isNoImage ? "bg-zinc-800" : ""
+                    className={`w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 ${isNoImage ? "bg-zinc-800" : ""
                       }`}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">
@@ -172,8 +168,8 @@ export default function RecentWorks() {
                 key={i + 1}
                 onClick={() => paginate(i + 1)}
                 className={`w-10 h-10 flex items-center justify-center text-sm transition-colors ${currentPage === i + 1
-                    ? "text-[#f97316] font-bold rounded-xl border"
-                    : "border border-zinc-700 hover:bg-zinc-800 text-zinc-400 rounded-xl"
+                  ? "text-[#f97316] font-bold rounded-xl border"
+                  : "border border-zinc-700 hover:bg-zinc-800 text-zinc-400 rounded-xl"
                   }`}
               >
                 {i + 1}
