@@ -53,7 +53,6 @@ const projects = [
     technology: "Altorouter PHP, Javascript, CSS, MySql",
     description:
       "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts.",
-    github: "https://github.com/boomieindahouse/ourgram",
   },
   {
     category: "Web & Application",
@@ -82,14 +81,14 @@ const projects = [
   },
   {
     category: "Web & Application",
-    title: "Thaiteentraining",
+    title: "Thaiteen Training (CAMRI)",
     images: [
       "https://placehold.co/800x600/EEE/31343C",
     ],
     technology: "NextJS, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://www.vu.ac.th",
+    liveDemo: "https://thaiteentraining.go.th",
   },
   {
     category: "Web & Application",
@@ -145,7 +144,6 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://www.chuaykai.com/",
   },
   {
     category: "Web & Application",
@@ -174,20 +172,6 @@ const projects = [
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     liveDemo: "https://toyotathongruay.com",
-  },
-  {
-    category: "Web & Application",
-    title: "Thaiteen Training (CAMRI)",
-    images: [
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-      "https://placehold.co/800x600/EEE/31343C",
-    ],
-    technology: "NextJS, TailwindCSS",
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://thaiteentraining.go.th",
   },
   {
     category: "Web & Application",
@@ -229,7 +213,7 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "#",
+    liveDemo: "https://www.kiakorat.com/",
   },
   {
     category: "Web & Application",
@@ -243,7 +227,7 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "#",
+    liveDemo: "https://hyundaikorat.com/",
   },
     {
     category: "Web & Application",
@@ -271,7 +255,7 @@ const projects = [
     technology: "Laravel, TailwindCSS",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
-    liveDemo: "https://demo.wintechmachinery.com",
+    liveDemo: "https://wintechmachinery.com",
   },
   {
     category: "Web & Application",
