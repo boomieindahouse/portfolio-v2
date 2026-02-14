@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null); 
-  const buttonRef = useRef(null); 
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,13 +17,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        menuRef.current && !menuRef.current.contains(event.target) && 
+        menuRef.current && !menuRef.current.contains(event.target) &&
         buttonRef.current && !buttonRef.current.contains(event.target)
       ) {
         setIsOpen(false);
       }
     };
-    
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -35,8 +35,12 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center h-[72px] px-4 lg:px-0">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-white text-xl font-bold">
+          <div className="flex-shrink-0 relative z-50">
+            <Link
+              href="/"
+              className="text-white text-xl font-bold"
+              onClick={() => setIsOpen(false)}
+            >
               BOOMIENDAHOUSE
             </Link>
           </div>
@@ -71,9 +75,8 @@ const Navbar = () => {
             ref={buttonRef} // ผูกกับปุ่ม Hamburger
           >
             <svg
-              className={`h-6 w-6 transform transition-transform duration-700 ${
-                isOpen ? 'rotate-180' : 'rotate-0'
-              }`}
+              className={`h-6 w-6 transform transition-transform duration-700 ${isOpen ? 'rotate-180' : 'rotate-0'
+                }`}
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -94,9 +97,8 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         ref={menuRef} // ผูกกับเมนู
-        className={`${
-          isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-        } fixed inset-x-0 top-[55px] bg-primary z-40 md:hidden transition-all duration-500 ease-in-out`}
+        className={`${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+          } fixed inset-x-0 top-[55px] bg-primary z-40 md:hidden transition-all duration-500 ease-in-out`}
       >
         <div className="flex flex-col items-end justify-center space-y-5 py-8 px-8">
           <Link
