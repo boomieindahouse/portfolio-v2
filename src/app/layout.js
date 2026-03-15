@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://elboomie.vercel.app/Homepage.png"
+          content="https://elboomie.vercel.app/Homepage1.png"
         />
         <meta property="og:url" content="https://elboomie.vercel.app/" />
         <meta property="og:site_name" content="Boomies Portfolio" />
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://elboomie.vercel.app/Homepage.png"
+          content="https://elboomie.vercel.app/Homepage1.png"
         />
         <meta name="twitter:site" content="@boomiebehumble" />
         <meta name="twitter:creator" content="@boomiebehumble" />
