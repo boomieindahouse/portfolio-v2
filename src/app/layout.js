@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Pawis Portfolio",
     images: [
       {
-        url: "https://www.pawis.xyz/Homepage.png",
+        url: "https://www.pawis.xyz/Homepage1.png",
         width: 1200,
         height: 630,
       },
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Pawis | Creative Full-Stack Developer",
     description: "Explore my latest web development projects and creative experiments.",
     creator: "@boomiebehumble",
-    images: ["https://www.pawis.xyz/Homepage.png"],
+    images: ["https://www.pawis.xyz/Homepage1.png"],
   },
 };
 
