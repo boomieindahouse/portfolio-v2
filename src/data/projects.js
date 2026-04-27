@@ -83,12 +83,49 @@ const projects = [
     category: "Web & Application",
     title: "Thaiteen Training (CAMRI)",
     images: [
-      "/assets/img/no-image.png",
+      "/assets/img/works/macbookmockthaiteen.png",
     ],
     technology: "NextJS, TailwindCSS",
     description:
       "The official training platform for the Child and Adolescent Mental Health Rajanagarindra Institute (CAMRI). This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
     liveDemo: "https://thaiteentraining.go.th",
+  },
+  {
+    category: "Web & Application",
+    title: "Graphic Designer Portfolio",
+    images: [
+      "/assets/img/works/mockupdookport.png",
+    ],
+    technology: "NextJS, TailwindCSS",
+    description:
+      "A personal portfolio website for Dook Peeradech Graphic Designer. This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
+    liveDemo: "https://dooksmile.vercel.app/",
+  },
+  {
+    category: "Web & Application",
+    title: "NP-Airservice",
+    images: [
+      "/assets/img/works/macmocknp1.png",
+      "/assets/img/works/macmocknp2.png",
+      "/assets/img/works/macmocknp3.png",
+      "/assets/img/works/macmocknp4.png",
+      "/assets/img/works/macmocknp5.png",
+    ],
+    technology: "Laravel, TailwindCSS",
+    description:
+      "The official website for NP-Airservice, serving as a central hub for air conditioning and electrical services, including installation, cleaning, and maintenance. Designed to be modern and accessible, ensuring customers and visitors can easily navigate service details, view our portfolio, and book appointments across any device.",
+    liveDemo: "https://np-airservice.xyz/",
+  },
+  {
+    category: "Web & Application",
+    title: "Graphic Designer Portfolio",
+    images: [
+      "/assets/img/works/macmockupaomport.png",
+    ],
+    technology: "NextJS, TailwindCSS",
+    description:
+      "A personal portfolio website for Aom Orada Graphic Designer. This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
+    liveDemo: "https://aomorada.vercel.app/",
   },
   {
     category: "Web & Application",
