@@ -44,13 +44,29 @@ const HeroSection = () => {
 
                     <div className="flex flex-col md:flex-row md:items-start justify-between md:space-x-20">
                         <div className="mb-4 md:mb-0 text-left md:text-left">
-                            <a
+                            {/* <a
                                 href="/my-resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-2 py-1 text-black bg-white hover:bg-transparent hover:border hover:text-white rounded-md transition duration-300 ease-in-out"
                             >
                                 My Resume
+                            </a> */}
+                            <a 
+                                href="/BoomCV.pdf" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center mt-4 px-5 py-2.5 bg-transparent border-white border hover:bg-white hover:text-black rounded-xl transition-all duration-500 font-normal text-sm group"
+                            >
+                                View CV
+                                {/* <svg 
+                                    className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg> */}
                             </a>
                         </div>
                         <div className="flex flex-col items-start md:items-start space-y-2">
