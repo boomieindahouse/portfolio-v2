@@ -65,6 +65,14 @@ const Navbar = () => {
             >
               Works
             </Link>
+            <a
+              href="/BoomCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-lg hover:text-orange-500 transition-colors"
+            >
+              View CV
+            </a>
           </div>
 
           {/* Hamburger Button for Mobile */}
@@ -122,6 +130,15 @@ const Navbar = () => {
           >
             Works
           </Link>
+          <a
+            href="/BoomCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-1xl hover:text-orange-500 transition-colors border-b border-gray-400"
+            onClick={toggleMenu}
+          >
+            View CV
+          </a>
         </div>
       </div>
     </nav>
