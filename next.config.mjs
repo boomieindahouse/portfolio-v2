@@ -14,6 +14,17 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   images: {
+    // WebP first, then AVIF: AVIF is slightly smaller but much slower to
+    // encode on first hit, which was the main cause of the slow Works
+    // grid. WebP at quality 90 is still visually identical to JPEG 100
+    // at display size. Original files are left untouched, so
+    // gallery/modal views can still open the full-resolution original.
+    formats: ["image/webp", "image/avif"],
+    // Largest display width in this site is a fullscreen banner (~1920px).
+    // 3840w was never needed and only made the optimizer generate an
+    // extra oversized variant.
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
         protocol: "https",

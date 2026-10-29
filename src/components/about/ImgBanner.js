@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 
 const SplitImageSection = () => {
     const [leftImageIndex, setLeftImageIndex] = useState(0);
@@ -51,19 +52,25 @@ const SplitImageSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Left Image */}
                 <div className="w-full h-[400px] md:h-[600px] xl:h-[800px] relative overflow-hidden">
-                    <img 
-                        src={leftImages[leftImageIndex]} 
+                    <Image
+                        src={leftImages[leftImageIndex]}
                         alt={`Landscape image ${leftImageIndex + 1}`}
-                        className="w-full h-full object-cover absolute inset-0"
+                        fill
+                        quality={90}
+                        sizes="50vw"
+                        className="object-cover"
                     />
                 </div>
                 
                 {/* Right Image */}
                 <div className="w-full h-[400px] md:h-[600px] xl:h-[800px] relative overflow-hidden">
-                    <img 
-                        src={rightImages[rightImageIndex]} 
+                    <Image
+                        src={rightImages[rightImageIndex]}
                         alt={`Image ${rightImageIndex + 1}`}
-                        className="w-full h-full object-cover absolute inset-0"
+                        fill
+                        quality={90}
+                        sizes="50vw"
+                        className="object-cover"
                     />
                 </div>
             </div>

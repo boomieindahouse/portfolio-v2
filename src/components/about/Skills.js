@@ -74,6 +74,10 @@ const SkillsSection = () => {
                                     <img
                                         src={item.icon}
                                         alt={item.name}
+                                        width={48}
+                                        height={48}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-12 h-12 mx-auto"
                                     />
                                     <div className="absolute inset-0 bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 hover:rounded-lg transition duration-300">

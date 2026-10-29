@@ -92,7 +92,11 @@ const AboutSection = () => {
                 src={src}
                 alt={`Profile ${index + 1}`}
                 fill
-                quality={100}
+                // Display is only 410px wide (820px at retina 2x), so the
+                // optimizer serves ~828px AVIF/WebP at quality 90: sharp on
+                // screen, a fraction of the 3-5 MB originals. Originals
+                // are untouched.
+                quality={90}
                 priority={index === 0}
                 className={`object-cover shadow-xl transform group-hover:scale-110 transition-all duration-1000 ${
                   index === currentImage

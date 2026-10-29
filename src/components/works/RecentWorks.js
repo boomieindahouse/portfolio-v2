@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { Icon } from "@iconify/react";
 import projects from "../../data/projects";
 import ProjectModal from "../layout/ProjectModal";
@@ -81,26 +82,11 @@ export default function RecentWorks() {
     }, 300);
   };
 
-  useEffect(() => {
-    filteredProjects.forEach((project) => {
-      if (activeTab === "Photography") {
-        if (Array.isArray(project.images)) {
-          project.images.forEach((src) => {
-            const img = new Image();
-            img.src = src;
-          });
-        } else {
-          const img = new Image();
-          img.src = project.images;
-        }
-      } else {
-        if (project.images && project.images[0]) {
-          const img = new Image();
-          img.src = project.images[0];
-        }
-      }
-    });
-  }, [activeTab, filteredProjects]);
+  // NOTE: the old preload effect was removed on purpose. It created a
+  // plain <img> for the first image of EVERY project in the tab (29 in
+  // Web & Application), downloading the full-size originals and defeating
+  // both pagination and next/image optimization. The grid below now loads
+  // only the 9-10 visible, optimizer-sized images, lazily.
 
   return (
     <section
@@ -135,7 +121,9 @@ export default function RecentWorks() {
           {currentProjects.map((project, index) => {
             const imageSrc =
               activeTab === "Photography"
-                ? project.images
+                ? Array.isArray(project.images)
+                  ? project.images[0]
+                  : project.images
                 : project.images[0];
             const isNoImage =
               typeof imageSrc === "string" && imageSrc.includes("no-image.png");
@@ -146,11 +134,26 @@ export default function RecentWorks() {
                 className="project-card text-start relative overflow-hidden group cursor-pointer"
                 onClick={() => openModal(project)}
               >
-                <div className="relative overflow-hidden rounded-lg aspect-[6/4] w-full">
-                  <img
+                <div className="relative overflow-hidden rounded-lg aspect-[6/4] w-full bg-zinc-800">
+                  <Image
                     src={imageSrc}
                     alt={project.title}
-                    className={`w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 ${isNoImage ? "bg-zinc-800" : ""
+                    fill
+                    quality={90}
+                    // First row loads eagerly so the grid is already
+                    // coming in when the user scrolls past the banner:
+                    // 3 columns on desktop (5 for Photography). The rest
+                    // stay lazy. Only the visible page loads, at optimizer
+                    // size, not the full-size original.
+                    priority={
+                      activeTab === "Photography" ? index < 5 : index < 3
+                    }
+                    sizes={
+                      activeTab === "Photography"
+                        ? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                        : "(max-width: 768px) 100vw, 33vw"
+                    }
+                    className={`object-cover transform transition-transform duration-500 group-hover:scale-105 ${isNoImage ? "bg-zinc-800" : ""
                       }`}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 flex items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-100">

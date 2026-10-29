@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import GLightbox from "glightbox";
 import "glightbox/dist/css/glightbox.min.css";
 
@@ -58,10 +59,15 @@ const HobbiesSection = () => {
                 className="glightbox"
                 data-gallery="hobby-gallery"
               >
-                <img
+                <Image
                   src={photo}
                   alt={`Photography sample ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-pointer"
+                  fill
+                  quality={90}
+                  // Grid is 2 columns on mobile, 4 on desktop. The
+                  // gallery link above still opens the full original.
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110 cursor-pointer"
                 />
               </a>
 

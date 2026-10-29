@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const PortfolioSection = () => {
   const projects = [
@@ -49,11 +50,17 @@ const PortfolioSection = () => {
               key={index}
               className={`relative block ${index % 2 !== 0 ? "sm:mt-16 lg:mt-24" : ""}`}
             >
-              <div className="bg-primary w-full aspect-[4/3] rounded-lg overflow-hidden group">
-                <img
+              <div className="bg-primary w-full aspect-[4/3] rounded-lg overflow-hidden group relative">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  quality={90}
+                  // Cards are 1 column on mobile, 2 columns on desktop.
+                  // No priority: these sit below the fold, so they load
+                  // lazily by default instead of competing with the hero.
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <h3 className="mt-4 text-lg lg:text-xl font-normal">

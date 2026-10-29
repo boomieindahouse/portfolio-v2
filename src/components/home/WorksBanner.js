@@ -24,25 +24,17 @@ const FullscreenLoopSection = () => {
           src={getPicture(currentSection)}
           alt={`Work Showcase ${currentSection}`}
           fill
-          priority
+          // No priority: this banner sits below the hero, so it must not
+          // compete with the LCP content. quality 90 in AVIF/WebP is
+          // visually identical to JPEG 100 at fullscreen size.
           sizes="100vw"
           className="object-cover"
-          quality={100} // Maximum quality
+          quality={90}
         />
       </div>
 
-      {/* Preload Next Image (Hidden) */}
-      <div className="hidden">
-        <Image
-          src={getPicture(
-            currentSection === totalPictures ? 1 : currentSection + 1,
-          )}
-          alt="preload"
-          width={10}
-          height={10}
-          priority
-        />
-      </div>
+      {/* NOTE: the old hidden 10x10 preload image was removed. It never
+          preloaded the fullscreen variant, it only added an extra request. */}
 
       {/* Overlay Gradient (Optional for text readability if needed later) */}
       <div className="absolute inset-0 bg-black/20" />
