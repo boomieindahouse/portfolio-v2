@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Icon } from "@iconify/react";
 import projects from "../../data/projects";
 import ProjectModal from "../layout/ProjectModal";
@@ -15,9 +16,20 @@ const tabs = [
 ];
 
 export default function RecentWorks() {
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const [activeTab, setActiveTab] = useState(
+    categoryParam && tabs.includes(categoryParam) ? categoryParam : tabs[0],
+  );
   const [fadeClass, setFadeClass] = useState("fade-in");
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    if (categoryParam && tabs.includes(categoryParam)) {
+      setActiveTab(categoryParam);
+      setCurrentPage(1);
+    }
+  }, [categoryParam]);
   const itemsPerPage = activeTab === "Photography" ? 10 : 9;
 
   const changeTab = (tab) => {

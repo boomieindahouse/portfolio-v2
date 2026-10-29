@@ -2,57 +2,47 @@ const projects = [
   // Web & Application
   {
     category: "Web & Application",
-    title: "Meeting Creative Company Website",
+    title: "Thaiteen Training (CAMRI)",
     images: [
-      "https://elboomie.vercel.app/assets/img/meetingweb.jpg",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/4.png",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/5.png",
-      "https://elboomie.vercel.app/assets/img/webproject/meeting/6.png",
+      "/assets/img/works/macbookmockthaiteen.png",
     ],
-    technology: "NEXT.js, TailwindCSS",
+    technology: "NextJS, TailwindCSS",
     description:
-      "The web application for Meeting Creative is designed to showcase the company's expertise in web design and development, graphic design, and network systems. This interactive platform provides a seamless user experience with key features such as a responsive layout, intuitive navigation, and engaging visual elements. Users can explore a wide range of services, view detailed project portfolios, and connect with the team easily.",
-    github: "https://github.com/boomieindahouse/meeting-redesign-th",
+      "The official training platform for the Child and Adolescent Mental Health Rajanagarindra Institute (CAMRI). This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
+    liveDemo: "https://thaiteentraining.go.th",
   },
   {
     category: "Web & Application",
-    title: "E-commerce Front-end",
+    title: "Boomie Booth",
     images: [
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom.jpg",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom1.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom2.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom3.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom4.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom5.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom6.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom7.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom8.png",
+      "/assets/img/works/boomie-booth-portfolio-phones.png",
     ],
-    technology: "React + Vite, TailwindCSS",
+    technology: "NextJS, TailwindCSS, Canvas API, gifenc, Vercel Analytics",
     description:
-      "This eCommerce website UI is a practice project designed to enhance my skills in using React and Tailwind CSS. The project involves building the user interface based on a design created in Figma.",
-    github: "https://github.com/boomieindahouse/ecommerce",
+      "Boomie Booth is a frontend-only photobooth web app for phones and iPad that recreates the real photo booth experience in the browser. Users pick from 47 templates across 12 categories, shoot with a 3-2-1 countdown just like a real booth, then edit with 18 filters, frame colors, custom text with Google Fonts, and emoji stickers before downloading the photo strip or sharing it. It also exports the shots as a 7-second looping GIF and includes a per-shot cropper for uploaded photos. Nothing is stored — everything runs entirely on the device.",
+    liveDemo: "https://boomiebooth.vercel.app/",
   },
   {
     category: "Web & Application",
-    title: "Ourgram",
+    title: "Vongchavalitkul University",
     images: [
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/ourgram.jpg",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og1.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og2.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og3.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og4.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og5.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og6.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og7.png",
-      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og8.png",
+      "https://elboomie.vercel.app/assets/img/vu.png",
     ],
-    technology: "Altorouter PHP, Javascript, CSS, MySql",
+    technology: "NextJS, TailwindCSS",
     description:
-      "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts.",
+      "The official website for Vongchavalitkul University, serving as a central hub for academic news, curriculum details, and student services. Designed to be modern and accessible, ensuring students and visitors can easily navigate information across any device.",
+    liveDemo: "https://www.vu.ac.th",
+  },
+  {
+    category: "Web & Application",
+    title: "Bangchan General Assembly Co., Ltd.",
+    images: [
+      "/assets/img/no-image.png",
+    ],
+    technology: "NextJS, Laravel",
+    description:
+      "The official website for Bangchan General Assembly Co., Ltd. (BGAC), a Thailand-based automotive contract manufacturer founded in 1970. It presents vehicle assembly from completely knocked-down parts for global automotive brands, along with painting and robotics, free-zone and warehouse operations, vehicle processing and bonded logistics services.",
+    liveDemo: "https://uat.bgac.co.th/",
   },
   {
     category: "Web & Application",
@@ -70,25 +60,14 @@ const projects = [
   },
   {
     category: "Web & Application",
-    title: "Vongchavalitkul University",
+    title: "Benya Medical Innovations",
     images: [
-      "https://elboomie.vercel.app/assets/img/vu.png",
+      "/assets/img/no-image.png",
     ],
-    technology: "NextJS, TailwindCSS",
+    technology: "NextJS, Laravel",
     description:
-      "The official website for Vongchavalitkul University, serving as a central hub for academic news, curriculum details, and student services. Designed to be modern and accessible, ensuring students and visitors can easily navigate information across any device.",
-    liveDemo: "https://www.vu.ac.th",
-  },
-  {
-    category: "Web & Application",
-    title: "Thaiteen Training (CAMRI)",
-    images: [
-      "/assets/img/works/macbookmockthaiteen.png",
-    ],
-    technology: "NextJS, TailwindCSS",
-    description:
-      "The official training platform for the Child and Adolescent Mental Health Rajanagarindra Institute (CAMRI). This web application facilitates online learning and resource distribution, built with NextJS for high performance and TailwindCSS for a clean, accessible user interface.",
-    liveDemo: "https://thaiteentraining.go.th",
+      "The official website for Benya Medical Innovations, a health innovation company developing solutions to improve quality of life. It presents its research and therapeutic areas, including chronic wound care, infectious diseases, dermatology, animal health, clinical diagnostics and biotechnology solutions.",
+    liveDemo: "https://benya.salemood.com/",
   },
   {
     category: "Web & Application",
@@ -115,6 +94,17 @@ const projects = [
     description:
       "The official website for NP-Airservice, serving as a central hub for air conditioning and electrical services, including installation, cleaning, and maintenance. Designed to be modern and accessible, ensuring customers and visitors can easily navigate service details, view our portfolio, and book appointments across any device.",
     liveDemo: "https://np-airservice.xyz/",
+  },
+  {
+    category: "Web & Application",
+    title: "Luang Phor Khun Parisuddho Technical College",
+    images: [
+      "/assets/img/no-image.png",
+    ],
+    technology: "NextJS, Laravel",
+    description:
+      "The official website for Luang Phor Khun Parisuddho Technical College in Dan Khun Thot, Nakhon Ratchasima, under the Northeastern Vocational Education Institute 5. It serves as a central hub for college news, announcements, activities and admissions information for students and visitors.",
+    liveDemo: "https://lpktc.ac.th/",
   },
   {
     category: "Web & Application",
@@ -304,6 +294,93 @@ const projects = [
     description:
       "The official digital platform for Leapmotor, the authorized Leapmotor dealer in Nakhon Ratchasima. designed to introduce their innovative electric vehicles to the market. Features a sleek, futuristic interface built with TailwindCSS to reflect the brand's technology, supported by a robust Laravel backend for seamless performance.",
     liveDemo: "https://demo.leapmotor.co.th",
+  },
+  {
+    category: "Web & Application",
+    title: "SIAMRANCH",
+    images: [
+      "/assets/img/no-image.png",
+    ],
+    technology: "NextJS, Laravel",
+    description:
+      "The official website for SIAMRANCH, a chemical-free anthocyanin wellness brand built around Double Butterfly Pea flowers. It presents the brand's cold-dried herbal tea, powder drink mixers and jelly strips, and their antioxidant benefits, with an online shop for ordering products.",
+    liveDemo: "https://siamranch.com/",
+  },
+  {
+    category: "Web & Application",
+    title: "Ourgram",
+    images: [
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/ourgram.jpg",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og1.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og2.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og3.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og4.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og5.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og6.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og7.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ourgram/og8.png",
+    ],
+    technology: "Altorouter PHP, Javascript, CSS, MySql",
+    description:
+      "Ourgram is a web application similar to Instagram, designed as a project for the Database Management course. The platform allows users to share photos and interact with other users, but with limited features compared to the full functionality of Instagram. Key implemented features include user registration and login, photo uploads, and basic social interactions such as liking and commenting on posts.",
+  },
+  {
+    category: "Web & Application",
+    title: "Meeting Creative Company Website V.2",
+    images: [
+      "https://elboomie.vercel.app/assets/img/meetingweb.jpg",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/1.png",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/2.png",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/3.png",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/4.png",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/5.png",
+      "https://elboomie.vercel.app/assets/img/webproject/meeting/6.png",
+    ],
+    technology: "NEXT.js, TailwindCSS",
+    description:
+      "The web application for Meeting Creative is designed to showcase the company's expertise in web design and development, graphic design, and network systems. This interactive platform provides a seamless user experience with key features such as a responsive layout, intuitive navigation, and engaging visual elements. Users can explore a wide range of services, view detailed project portfolios, and connect with the team easily.",
+    github: "https://github.com/boomieindahouse/meeting-redesign-th",
+  },
+  {
+    category: "Web & Application",
+    title: "ABCNada Maid Management",
+    images: [
+      "/assets/img/no-image.png",
+    ],
+    technology: "NextJS, Laravel",
+    description:
+      "A maid management system for housing village projects, built to organise housekeepers across each project. The NextJS backend provides the management interface, while the Laravel API handles the system data.",
+    liveDemo: "https://uat.abcnada.com/",
+  },
+  {
+    category: "Web & Application",
+    title: "E-commerce Front-end",
+    images: [
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom.jpg",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom1.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom2.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom3.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom4.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom5.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom6.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom7.png",
+      "https://elboomie.vercel.app/assets/img/webproject/ecom/ecom8.png",
+    ],
+    technology: "React + Vite, TailwindCSS",
+    description:
+      "This eCommerce website UI is a practice project designed to enhance my skills in using React and Tailwind CSS. The project involves building the user interface based on a design created in Figma.",
+    github: "https://github.com/boomieindahouse/ecommerce",
+  },
+  {
+    category: "Web & Application",
+    title: "Barron-Aaron",
+    images: [
+      "/assets/img/no-image.png",
+    ],
+    technology: "Laravel",
+    description:
+      "The official website for Barron-Aaron, presenting its beauty and medical device product lines. Visitors can search for clinics by name, location and product, and explore ranges including collagen, hair serum, skincare and VIVO medical devices.",
+    liveDemo: "https://barron-aaron.com/",
   },
 
 

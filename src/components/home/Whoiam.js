@@ -18,6 +18,20 @@ const AboutSection = () => {
     age--;
   }
 
+  const profileImages = [
+    "/assets/img/boomprofile1.JPG",
+    "/assets/img/boomprofile2.JPG",
+    "/assets/img/boomprofile3.JPG",
+  ];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % profileImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [profileImages.length]);
+
   return (
     <section className="px-4 sm:px-6 xl:px-8 bg-primary text-white">
       <div className="container mx-auto">
@@ -72,14 +86,22 @@ const AboutSection = () => {
 
           {/* รูปโปรไฟล์ */}
           <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 xl:mb-10 relative group overflow-hidden">
-            <Image
-              src="/assets/img/boomprofile.jpg"
-              alt="Profile"
-              fill
-              quality={100}
-              className="object-cover shadow-xl transition-transform transform group-hover:scale-110 group-hover:opacity-50 hover:duration-700"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            {profileImages.map((src, index) => (
+              <Image
+                key={src}
+                src={src}
+                alt={`Profile ${index + 1}`}
+                fill
+                quality={100}
+                priority={index === 0}
+                className={`object-cover shadow-xl transform group-hover:scale-110 transition-all duration-1000 ${
+                  index === currentImage
+                    ? "opacity-100 group-hover:opacity-50"
+                    : "opacity-0"
+                }`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            ))}
 
             {/* Social Media Icons */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">

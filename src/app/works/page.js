@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import WorksTitle from '../../components/works/WorksTitle'
 import WorksBanner from '@/components/home/WorksBanner';
 import RecentWorks from '@/components/works/RecentWorks';
@@ -8,7 +9,9 @@ export default function Home() {
     <div>
       <WorksTitle />
       <WorksBanner />
-      <RecentWorks />
+      <Suspense>
+        <RecentWorks />
+      </Suspense>
     </div>
   );
 }

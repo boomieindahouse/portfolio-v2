@@ -4,18 +4,22 @@ const PortfolioSection = () => {
   const projects = [
     {
       title: "Website & Application Development",
+      category: "Web & Application",
       image: "https://elboomie.vercel.app/assets/img/works/meetingweb.jpg", //change already
     },
     {
       title: "UX/UI Design",
+      category: "UX/UI Design",
       image: "https://elboomie.vercel.app/assets/img/works/uxuifigma.jpg", //change already
     },
     {
       title: "Photography",
+      category: "Photography",
       image: "https://elboomie.vercel.app/assets/img/picc.jpg", //change already
     },
     {
       title: "Graphic Ads Design",
+      category: "Graphic Design",
       image: "https://elboomie.vercel.app/assets/img/works/mock4.jpg", //change already
     },
   ];
@@ -41,7 +45,7 @@ const PortfolioSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-12">
           {projects.map((project, index) => (
             <Link
-              href="/works#recent-works"
+              href={`/works?category=${encodeURIComponent(project.category)}#recent-works`}
               key={index}
               className={`relative block ${index % 2 !== 0 ? "sm:mt-16 lg:mt-24" : ""}`}
             >
