@@ -85,7 +85,11 @@ const AboutSection = () => {
           </div>
 
           {/* รูปโปรไฟล์ */}
-          <div className="w-full sm:w-[410px] sm:h-[485px] mb-5 xl:mb-10 relative group overflow-hidden">
+          {/* Mobile fix: the fill images need a sized parent. Height was
+              only set from sm up, so on mobile the box collapsed to 0px
+              and the profile was invisible. aspect-[410/485] gives mobile
+              the same proportions as desktop; sm+ keeps the fixed size. */}
+          <div className="w-full aspect-[410/485] sm:w-[410px] sm:h-[485px] sm:aspect-auto mb-5 xl:mb-10 relative group overflow-hidden">
             {profileImages.map((src, index) => (
               <Image
                 key={src}
@@ -98,17 +102,23 @@ const AboutSection = () => {
                 // are untouched.
                 quality={90}
                 priority={index === 0}
-                className={`object-cover shadow-xl transform group-hover:scale-110 transition-all duration-1000 ${
+                // Polaroid slide-tilt: the incoming photo starts 20% to
+                // the right and tilted 4deg, then slides in and
+                // straightens over 1s while fading in. z-10 keeps the
+                // incoming photo on top, including the 3 -> 1 wrap.
+                className={`object-cover shadow-xl transform group-hover:scale-110 transition-all duration-1000 ease-out ${
                   index === currentImage
-                    ? "opacity-100 group-hover:opacity-50"
-                    : "opacity-0"
+                    ? "opacity-100 z-10 translate-x-0 rotate-0 group-hover:opacity-50"
+                    : "opacity-0 z-0 translate-x-[20%] rotate-[4deg]"
                 }`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             ))}
 
             {/* Social Media Icons */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+            {/* z-20: the active photo now has z-10, so the overlay must
+                stay above it. */}
+            <div className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
               <div className="flex space-x-6">
                 <a
                   href="https://linkedin.com/in/prawitsanat"
